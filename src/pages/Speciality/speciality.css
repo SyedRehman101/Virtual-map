@@ -1,5 +1,4 @@
 .speciality {
-	background: #070a29;
 	padding: 100px 0 75px;
 	position: relative;
 }
@@ -12,12 +11,12 @@
 	);
 	content: "";
 	height: 1000px;
-	right: -200px;
-	opacity: 0.5;
+	right: -280px;
+	opacity: 0.2;
 	position: absolute;
-	top: -200px;
+	top: -109px;
 	width: 1000px;
-	z-index: 1;
+	z-index: 0;
 }
 
 .speciality-box {
@@ -63,4 +62,10 @@
 
 .speciality-box .number:hover {
 	color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+	.speciality {
+		padding: 0px;
+	}
 }

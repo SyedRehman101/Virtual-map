@@ -8,7 +8,7 @@ const RoadMap = () => {
     <section className='roadmap'>
       <img src={roadmap} alt="Road Map bg" className='img-line' />
       <div className='rm-shape'></div>
-      <div className='max-w-screen-xl mx-auto'>
+      <div className='lg:max-w-screen-xl w-ful  mx-auto p-4'>
         <div class="block-text text-center">
           <h6 class="sub-heading"><span>Road Map</span></h6>
           <h3 class="heading lg:text-4xl text-2xl text-base-100 font-bold leading-normal">The Journey of Laaverse</h3>

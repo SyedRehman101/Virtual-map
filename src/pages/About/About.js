@@ -8,9 +8,9 @@ import img5 from '../../assets/Images/about_5.png'
 
 const About = () => {
   return (
-    <section className='about py-28'>
+    <section className='about lg:py-28 py-8'>
       <div className="ab-shape"></div>
-      <div className='max-w-screen-xl mx-auto lg:px-20 px-4'>
+      <div className='lg:max-w-screen-xl mx-auto w-full lg:px-20 px-4'>
         <div className="grid lg:grid-cols-2 grid-cols-1">
           <div className='about-left'>
             <div className="images">

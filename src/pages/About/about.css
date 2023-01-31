@@ -11,7 +11,7 @@
 	content: "";
 	height: 1000px;
 	left: -200px;
-	opacity: 0.5;
+	opacity: 0.3;
 	position: absolute;
 	top: -200px;
 	width: 1000px;
@@ -160,6 +160,22 @@
 }
 
 @media only screen and (max-width: 767px) {
+	.about .about-left .images .img2 {
+		border-radius: 35px;
+		height: 415px;
+		margin: 0px 0 0 -4px;
+		z-index: 3;
+	}
+
+	.about .about-left .images:after {
+		border-radius: 64px;
+		height: 450px;
+		left: -31px;
+		top: -19px;
+		transform: rotate(0deg);
+		width: 384px;
+	}
+
 	.img2 {
 		width: 100%;
 	}

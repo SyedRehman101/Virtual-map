@@ -8,8 +8,8 @@ import './Hero.css';
 const Hero = () => {
   return (
     <div className='banner-bg'>
-      <div className="shape"></div>
-      <div className="lg:max-w-screen-2xl w-full mx-auto grid lg:grid-cols-2 grid-cols-1 p-6 items-center">
+      <div className="hero-shape"></div>
+      <div className="lg:max-w-screen-xl w-full mx-auto grid lg:grid-cols-2 grid-cols-1 p-6 items-center">
         <div className="content">
           <h1 className="lg:text-xl text-sm font-md text-neutral">Laaverse</h1>
           <p className="text-3xl lg:text-7xl lg:font-bold text-base-100 leading-normal here-title">Buy and Sell <br /> Digital art<br /><span className='text-secondary'>NFT</span> Collection</p>

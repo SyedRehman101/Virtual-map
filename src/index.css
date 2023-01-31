@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	overflow-x: hidden;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -31,4 +35,10 @@ body {
 }
 .h {
 	color: #2503288c;
+}
+
+@media only screen and (max-width: 767px) {
+	html {
+		overflow-x: hidden;
+	}
 }

@@ -9,13 +9,13 @@ import DrawerContextProvider from '../context/drawerContext';
 const Main = () => {
   AOS.init();
   return (
-    <div>
+    <>
       <DrawerContextProvider>
         <Header></Header>
         <Navbar></Navbar>
         <Outlet></Outlet>
       </DrawerContextProvider>
-    </div>
+    </>
   );
 };
 

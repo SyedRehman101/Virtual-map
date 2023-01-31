@@ -9,7 +9,7 @@ const Speciality = () => {
   return (
     <section className='speciality'>
       <div className="sp-shape"></div>
-      <div className='max-w-screen-xl mx-auto'>
+      <div className='lg:max-w-screen-xl mx-auto w-full p-4'>
         <div class="block-text text-center">
           <h6 class="sub-heading"><span>Our Speciality</span></h6>
           <h3 class="heading lg:text-4xl text-2xl text-base-100 font-bold leading-normal">Complete Solutions for your NFT</h3>
