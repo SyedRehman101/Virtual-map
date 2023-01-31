@@ -1,0 +1,147 @@
+.banner-bg {
+	background-size: cover;
+	position: relative;
+}
+
+.shape {
+	background: radial-gradient(
+		34.98% 34.98% at 50% 50%,
+		#725bda 0,
+		rgba(6, 19, 45, 0) 100%
+	);
+	content: "";
+	height: 2000px;
+	left: 0px;
+	opacity: 0.5;
+	position: absolute;
+	bottom: -600px;
+	width: 2000px;
+	z-index: 1;
+}
+
+.banner__right {
+	padding: 83px 0;
+	position: relative;
+}
+
+.banner__right .image {
+	border-radius: 130px;
+	box-shadow: 0 16px 36px rgb(0 0 0 / 25%);
+	height: 600px;
+	margin-left: auto;
+	margin-right: 74px;
+	position: relative;
+	width: 551px;
+}
+
+.banner__right .image img {
+	border-radius: 130px;
+	height: 100%;
+	object-fit: cover;
+	position: relative;
+	width: 100%;
+	z-index: 2;
+}
+
+.banner__right .image:before {
+	background: hsla(0, 0%, 100%, 0.1);
+	border-radius: 130px;
+	content: "";
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	transform: rotate(-17deg);
+}
+
+.banner__right .image:after {
+	background: hsla(0, 0%, 100%, 0.1);
+	border-radius: 130px;
+	content: "";
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	transform: rotate(-7deg);
+}
+
+.banner__right .price {
+	align-items: center;
+	-webkit-animation: animate-1 15s linear 0s infinite;
+	animation: animate-1 15s linear 0s infinite;
+	background: #fff;
+	border-radius: 30px;
+	display: flex;
+	padding: 20px;
+	position: absolute;
+	right: 0;
+	top: 168px;
+	z-index: 3;
+}
+
+.banner__right .price .icon {
+	filter: drop-shadow(0 15px 20px rgba(164, 128, 255, 0.5));
+	margin-right: 15px;
+}
+
+.banner__right .owner {
+	align-items: center;
+	-webkit-animation: animate-3 5s linear 0s infinite;
+	animation: animate-3 5s linear 0s infinite;
+	background: #fff;
+	border-radius: 30px;
+	bottom: 206px;
+	display: flex;
+	left: 4px;
+	padding: 20px;
+	position: absolute;
+	z-index: 3;
+}
+
+.banner__right .owner .image {
+	border-radius: 50%;
+	height: 70px;
+	margin-right: 15px;
+	min-width: 70px;
+	overflow: hidden;
+	width: 70px;
+}
+
+.banner__right .owner .image img {
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.here-title {
+	font-family: "Oswald", sans-serif;
+	line-height: 1.4;
+}
+
+@keyframes owner {
+	from {
+		bottom: 50px;
+	}
+	to {
+		bottom: 60px;
+	}
+}
+
+@keyframes animate-1 {
+	from {
+		right: 0px;
+	}
+	to {
+		right: 10px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.banner__right .image {
+		width: 100%;
+	}
+}

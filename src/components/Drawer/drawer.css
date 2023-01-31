@@ -1,0 +1,13 @@
+.m-nav {
+	transform: translateX(-100%);
+	transition: 0.3s all ease-in-out;
+}
+.m-nav.show {
+	transform: translateX(0);
+}
+
+@media (max-width: 440px) {
+	.m-nav {
+		width: 280px !important;
+	}
+}

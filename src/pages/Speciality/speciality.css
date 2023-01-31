@@ -1,0 +1,66 @@
+.speciality {
+	background: #070a29;
+	padding: 100px 0 75px;
+	position: relative;
+}
+
+.sp-shape {
+	background: radial-gradient(
+		34.98% 34.98% at 50% 50%,
+		#725bda 0,
+		rgba(6, 19, 45, 0) 100%
+	);
+	content: "";
+	height: 1000px;
+	right: -200px;
+	opacity: 0.5;
+	position: absolute;
+	top: -200px;
+	width: 1000px;
+	z-index: 1;
+}
+
+.speciality-box {
+	background: linear-gradient(
+		180deg,
+		hsla(0, 0%, 100%, 0.05),
+		hsla(0, 0%, 100%, 0) 73.86%
+	);
+	border-radius: 15px;
+	margin-top: 108px;
+	padding: 65px 20px 10px;
+	position: relative;
+	text-align: center;
+	z-index: 2;
+}
+
+.speciality-box .icon {
+	align-items: center;
+	background: linear-gradient(289.89deg, #dec7ff -23.71%, #5c27fe 96.09%);
+	border-radius: 50%;
+	display: flex;
+	height: 105px;
+	justify-content: center;
+	left: 50%;
+	min-width: 105px;
+	position: absolute;
+	top: -18px;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	transition: all 1s ease-in-out;
+	width: 105px;
+}
+
+.speciality-box:hover .icon {
+	-webkit-transform: translate(-50%, -50%) rotateY(-1turn);
+	transform: translate(-50%, -50%) rotateY(-1turn);
+}
+
+.speciality-box .number {
+	color: hsla(0, 0%, 100%, 0.1);
+	transition: all 0.3s ease-in-out;
+}
+
+.speciality-box .number:hover {
+	color: #fff;
+}

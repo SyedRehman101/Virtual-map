@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow-x: hidden;
+	font-family: "Oswald", sans-serif;
+	font-family: "Poppins", sans-serif;
+	background-color: #070a29;
+}
+
+:root {
+	--primary: #62137d;
+	--primaryHover: #4e0866;
+	--primaryG: rgb(175, 68, 212);
+	--darkBlue: #06021a;
+	--yellow: #c4a73d;
+	--primaryLight: #d6a8ed;
+	--primaryDark: #250328;
+	--pure: #fff;
+	--light: rgb(230, 230, 230);
+	--dark: #000;
+	--darkLight: rgb(26, 26, 26);
+	--gray: #5a5a5a;
+}
+.h {
+	color: #2503288c;
+}
