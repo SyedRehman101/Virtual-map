@@ -17,7 +17,7 @@ const Faq = () => {
 
         <div className='faq__main mt-8'>
           <ul>
-            <li className={`${path.includes('') && 'active'}`}><NavLink to='/Crypto'>Cryptocurrency</NavLink></li>
+            <li className={`${path.includes('Crypto') && 'active'}`}><NavLink to='/Crypto'>Cryptocurrency</NavLink></li>
             <li className={`${path.includes('NftToken') && 'active'}`}><NavLink to='/NftToken'>NFT Token</NavLink></li>
             <li className={`${path.includes('Collection') && 'active'}`}><NavLink to='/Collection'>Collection</NavLink></li>
             <li className={`${path.includes('CryptoTrade') && 'active'}`}><NavLink to='/CryptoTrade'>Crypto Trading</NavLink></li>

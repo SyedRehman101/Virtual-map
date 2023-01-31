@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../../components/Hero/Hero';
 import About from '../About/About';
+import Create from '../Create/Create';
 import Faq from '../Faq/Faq';
 import Portfolio from '../Portfolio/Portfolio';
 import Projects from '../Projects/Projects';
@@ -19,6 +20,7 @@ const Home = () => {
       <RoadMap></RoadMap>
       <Team></Team>
       <Faq></Faq>
+      <Create></Create>
     </>
   );
 };

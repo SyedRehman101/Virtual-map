@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import Header from '../pages/Shared/Header/Header';
 import { Outlet } from 'react-router';
 import DrawerContextProvider from '../context/drawerContext';
+import Footer from '../pages/Shared/Footer/Footer';
 
 const Main = () => {
   AOS.init();
@@ -14,6 +15,7 @@ const Main = () => {
         <Header></Header>
         <Navbar></Navbar>
         <Outlet></Outlet>
+        <Footer></Footer>
       </DrawerContextProvider>
     </>
   );
