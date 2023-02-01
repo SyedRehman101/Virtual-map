@@ -10,7 +10,7 @@ const Navlinks = () => {
       <li>
         <NavLink to="/about" className="uppercase">About Us</NavLink>
       </li>
-      <li><NavLink to="/Speciality" className="uppercase">NFT Market</NavLink></li>
+      <li><NavLink to="/nftmarket" className="uppercase">NFT Market</NavLink></li>
       <li>
         <NavLink to="/Portfolio" className="uppercase">Land Map</NavLink>
       </li>

@@ -8,6 +8,8 @@ import CryptoTrade from "../pages/Faq/CryptoTrade";
 import Faq from "../pages/Faq/Faq";
 import NftToken from "../pages/Faq/NftToken";
 import Home from "../pages/Home/Home";
+import NftMarketPage from "../pages/NftMarket/NftMarketPage";
+import NftMarket from "../pages/NftMarket/NftMarketPage";
 import Portfolio from "../pages/Portfolio/Portfolio";
 import Projects from "../pages/Projects/Projects";
 import RoadMap from "../pages/RoadMap/RoadMap";
@@ -49,8 +51,8 @@ const Router = createBrowserRouter([
         element: <AboutPage></AboutPage>,
       },
       {
-        path: '/Speciality',
-        element: <Speciality></Speciality>
+        path: '/nftmarket',
+        element: <NftMarketPage></NftMarketPage>
       },
       {
         path: '/Portfolio',
