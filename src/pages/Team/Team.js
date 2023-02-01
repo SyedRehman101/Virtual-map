@@ -10,6 +10,7 @@ import member5 from '../../assets/Images/member5.png';
 import './team.css';
 import TeamBox from './TeamBox';
 import Brand from '../Brand/Brand';
+import { Fade } from 'react-reveal';
 
 const Team = () => {
   return (
@@ -85,7 +86,9 @@ const Team = () => {
 
 
           </Swiper>
-          <Brand></Brand>
+          <Fade duration="3000">
+            <Brand></Brand>
+          </Fade>
         </div>
 
       </div>

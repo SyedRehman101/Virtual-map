@@ -6,6 +6,7 @@ import icon1 from '../../assets/svg/icon1.svg';
 import icon2 from '../../assets/svg/icon2.svg';
 import icon3 from '../../assets/svg/icon3.svg';
 import icon4 from '../../assets/svg/icon4.svg';
+import { Fade } from 'react-reveal';
 
 
 const Portfolio = () => {
@@ -20,38 +21,50 @@ const Portfolio = () => {
 
         <div className="grid lg:grid-cols-2 grid-cols-1 mt-20">
           <div className="portfolio__left">
-            <PortfolioBox
-              icon={icon1}
-              title="Connect your Wallet"
-              summary="Suspendisse tristique neque a lorem placerat pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
-              step="1"
-            ></PortfolioBox>
+            <Fade duration="3000">
+              <PortfolioBox
+                icon={icon1}
+                title="Connect your Wallet"
+                summary="Suspendisse tristique neque a lorem placerat pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
+                step="1"
+              ></PortfolioBox>
+            </Fade>
 
-            <PortfolioBox
-              icon={icon2}
-              title="Buy your NFT"
-              summary="Suspendisse tristique neque a lorem placerat pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
-              step="1"
-            ></PortfolioBox>
+            <Fade>
+              <PortfolioBox
+                icon={icon2}
+                title="Buy your NFT"
+                summary="Suspendisse tristique neque a lorem placerat pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
+                step="1"
+              ></PortfolioBox>
+            </Fade>
 
-            <PortfolioBox
-              icon={icon3}
-              title="Create collection"
-              summary="Suspendisse tristique neque a lorem placerat pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
-              step="1"
-            ></PortfolioBox>
+            <Fade duration="3000">
+              <PortfolioBox
+                icon={icon3}
+                title="Create collection"
+                summary="Suspendisse tristique neque a lorem placerat pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
+                step="1"
+              ></PortfolioBox>
+            </Fade>
 
-            <PortfolioBox
-              icon={icon4}
-              title="Sell your NFT"
-              summary="Suspendisse tristique neque a lorem placerat pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
-              step="1"
-            ></PortfolioBox>
+
+            <Fade duration="3000">
+              <PortfolioBox
+                icon={icon4}
+                title="Sell your NFT"
+                summary="Suspendisse tristique neque a lorem placerat pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
+                step="1"
+              ></PortfolioBox>
+            </Fade>
+
           </div>
 
           <div className="portfolio__right">
             <div className="image">
-              <img src={protfolio} alt="Portfolio Banner" />
+              <Fade duration="3000">
+                <img src={protfolio} alt="Portfolio Banner" />
+              </Fade>
             </div>
           </div>
         </div>

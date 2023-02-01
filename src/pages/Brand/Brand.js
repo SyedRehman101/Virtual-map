@@ -13,11 +13,10 @@ const Brand = () => {
   return (
     <div className='brands block-text text-center mt-10'>
       <h2 className='sub-heading'><span>We Are Partnered with Top Brands</span></h2>
-
       <div className='mt-8'>
         <Swiper
           slidesPerView={5}
-          spaceBetween={30}
+          spaceBetween={20}
           className="brandSlider"
           breakpoints={{
             1100: {

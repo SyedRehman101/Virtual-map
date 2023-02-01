@@ -4,13 +4,15 @@ import { useDrawerContext } from '../../../context/drawerContext/index';
 import Bell from '../../../assets/svg/bell.svg';
 import ArrowDown from '../../../assets/svg/arrowDown.svg';
 import Navlinks from '../../../components/Navlinks/Navlinks';
+import UseSticky from '../../../hooks/UseSticky';
+import classNames from 'classnames';
 
 
 const Navbar = () => {
   const { showDrawer, setShowDrawer } = useDrawerContext();
-
+  const { sticky, stickyRef } = UseSticky();
   return (
-    <div className='flex items-center justify-between bg-darkBlue gap-2  xl:px-8 py-4 sm:px-4 px-2'>
+    <div ref={stickyRef} className={classNames("navbar flex items-center justify-between bg-darkBlue gap-2  xl:px-8 py-4 sm:px-4 px-2 ", { sticky })}>
       <div>
         <div className='rounded-md sm:py-2 py-1.5 md:px-12 px-8 text-center text-base ' style={{
           background: ' linear-gradient(34deg, rgba(176,162,181,1) 22%, rgba(78,67,82,1) 89%)'

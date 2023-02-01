@@ -6,6 +6,7 @@ import Header from '../pages/Shared/Header/Header';
 import { Outlet } from 'react-router';
 import DrawerContextProvider from '../context/drawerContext';
 import Footer from '../pages/Shared/Footer/Footer';
+import ScrollToTop from 'react-scroll-to-top';
 
 const Main = () => {
   AOS.init();
@@ -16,6 +17,7 @@ const Main = () => {
         <Navbar></Navbar>
         <Outlet></Outlet>
         <Footer></Footer>
+        <ScrollToTop smooth color='#fff' width="30" height='18' className='scrolTop' />
       </DrawerContextProvider>
     </>
   );

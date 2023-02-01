@@ -37,6 +37,30 @@ body {
 	color: #2503288c;
 }
 
+.scrolTop {
+	align-items: center;
+	background: linear-gradient(264.28deg, #dec7ff -38.2%, #5c27fe 103.12%);
+	border-radius: 4px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	bottom: 23px;
+	cursor: pointer;
+	display: block;
+	display: flex;
+	height: 50px;
+	justify-content: center;
+	line-height: 50px;
+	overflow: hidden;
+	position: fixed;
+	right: 14px;
+	text-align: center;
+	width: 50px;
+	z-index: 999;
+}
+
 @media only screen and (max-width: 767px) {
 	html {
 		overflow-x: hidden;
