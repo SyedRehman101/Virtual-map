@@ -2,6 +2,12 @@
 	display: none;
 }
 
+.header {
+	z-index: 1000;
+	position: relative;
+	width: 100%;
+}
+
 .bar1,
 .bar2,
 .bar3 {
@@ -32,6 +38,17 @@
 .change .bar3 {
 	-webkit-transform: rotate(45deg) translate(-8px, -8px);
 	transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.main__navlinks ul .active {
+	background: linear-gradient(264.28deg, #dec7ff -38.2%, #5c27fe 103.12%),
+		hsla(0, 0%, 100%, 0.1);
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	margin: 0 5px;
+	outline: none;
+	padding: 10px 16px;
 }
 
 @media (max-width: 950px) {

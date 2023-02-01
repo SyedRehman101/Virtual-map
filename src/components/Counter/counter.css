@@ -1,0 +1,42 @@
+.couter__main {
+	background: linear-gradient(264.28deg, #dec7ff -38.2%, #5c27fe 103.12%);
+	border-radius: 26px;
+	padding: 37px 43px;
+	position: relative;
+}
+
+.couter-box {
+	margin-right: 106px;
+	position: relative;
+	text-align: center;
+}
+
+.couter-box .icon {
+	align-items: center;
+	background: linear-gradient(180deg, #fff, hsla(0, 0%, 100%, 0.5));
+	border-radius: 60%;
+	display: flex;
+	height: 66px;
+	justify-content: center;
+	margin: 0 auto 12px;
+	width: 66px;
+	font-size: 35px;
+}
+
+.couter-box:after {
+	background: hsla(0, 0%, 100%, 0.15);
+	content: "";
+	height: 80px;
+	position: absolute;
+	right: -53px;
+	top: 35px;
+	width: 1px;
+}
+
+.couter__main .image {
+	-webkit-animation: animate-1 15s linear 0s infinite;
+	animation: animate-1 15s linear 0s infinite;
+	position: absolute;
+	right: 34px;
+	top: -105px;
+}

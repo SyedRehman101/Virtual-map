@@ -4,6 +4,11 @@
 }
 
 .hero-shape {
+	left: auto;
+	right: -60%;
+}
+
+.hero-shape {
 	background: radial-gradient(
 		34.98% 34.98% at 50% 50%,
 		#725bda 0,

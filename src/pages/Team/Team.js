@@ -82,9 +82,6 @@ const Team = () => {
                 position="Frontend Developer"
               />
             </SwiperSlide>
-
-
-
           </Swiper>
           <Fade duration="3000">
             <Brand></Brand>

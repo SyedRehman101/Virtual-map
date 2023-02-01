@@ -1,32 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navlinks = () => {
   return (
-    <ul className='w-full flex items-center gap-6 text-pure text-semibold navLinks'>
-      <li className='hover:text-primaryLight'>
-        <Link to='#'>GAME PLAY</Link>
+    <ul className='w-full flex items-center gap-6 text-pure text-semibold'>
+      <li>
+        <NavLink to="/" className="uppercase">Home</NavLink>
       </li>
-      <li className='hover:text-primaryLight'>
-        <Link to='#'>ABOUT US</Link>
+      <li>
+        <NavLink to="/about" className="uppercase">About Us</NavLink>
       </li>
-      <li className='hover:text-primaryLight'>
-        <Link to='#'>NFT MARKET</Link>
+      <li><NavLink to="/Speciality" className="uppercase">NFT Market</NavLink></li>
+      <li>
+        <NavLink to="/Portfolio" className="uppercase">Land Map</NavLink>
       </li>
-      <li className='hover:text-primaryLight'>
-        <Link to='#'>LAND MAP</Link>
+      <li>
+        <NavLink to="/Projects" className="uppercase">Staking</NavLink>
       </li>
-      <li className='hover:text-primaryLight'>
-        <Link to='#'>STAKING</Link>
+      <li>
+        <NavLink to="/RoadMap" className="uppercase">Community</NavLink>
       </li>
-      <li className='hover:text-primaryLight'>
-        <Link to='#'>MEDIA</Link>
+      <li>
+        <NavLink to="/TeamMember" className="uppercase">Doa</NavLink>
       </li>
-      <li className='hover:text-primaryLight'>
-        <Link to='#'>DAO</Link>
-      </li>
-      <li className='hover:text-primaryLight'>
-        <Link to='#'>FQA</Link>
+      <li>
+        <NavLink to="/Faqs" className="uppercase">Faqs</NavLink>
       </li>
     </ul>
   );

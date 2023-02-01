@@ -8,7 +8,7 @@ import img5 from '../../assets/Images/about_5.png'
 
 const About = () => {
   return (
-    <section className='about lg:py-28 py-8'>
+    <section id='about' className='about lg:py-28 py-8'>
       <div className="ab-shape"></div>
       <div className='lg:max-w-screen-xl mx-auto w-full lg:px-20 px-4'>
         <div className="grid lg:grid-cols-2 grid-cols-1">
@@ -24,7 +24,7 @@ const About = () => {
           <div className="about-right">
             <div className="content">
               <h4 className="sub-heading"><span>About Us</span></h4>
-              <h3 className="heading lg:text-6xl text-2xl text-base-100 font-bold leading-normal">Hight Quality NFT Collections</h3>
+              <h3 className="heading lg:text-6xl text-2xl text-base-100 font-bold leading-8">Hight Quality NFT Collections</h3>
               <p className='text-base-100'>Cyfonii is the premier marketplace for nifties, which are digital items you can truly own for yourself</p>
               <p className='text-base-100 py-4'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat</p>
               <a href="/about" className='action-btn'><span>More About Us</span></a>
