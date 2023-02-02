@@ -103,7 +103,7 @@ const StakingProject = () => {
         </div >
 
         <div>
-          <img src={lineBg} alt="" className='mark-img-line' />
+
           {
             igos_projects.map(item => (
               <div className="igs-project-box p-6 rounded-3xl bg-darkBlue my-8 shadow-lg">
@@ -131,7 +131,7 @@ const StakingProject = () => {
           }
 
         </div>
-
+        <img src={lineBg} alt="" className='mark-img-line' />
       </div>
     </section>
   );
