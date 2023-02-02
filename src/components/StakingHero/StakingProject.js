@@ -3,7 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css/pagination";
 import 'swiper/css';
 import igos_projects from '../../pages/Staking/data/igos';
-import { FaFacebookF, FaTelegramPlane, FaTwitter } from 'react-icons/fa';
+import { FaFacebookF, FaTelegramPlane, FaTwitter, FaArrowRight } from 'react-icons/fa';
+import lineBg from '../../assets/Images/roadmapbg.png';
 
 const StakingProject = () => {
   return (
@@ -15,8 +16,9 @@ const StakingProject = () => {
             <h2 className='text-4xl font-bold text-base-100 mt-4'>Upcoming IGOs</h2>
           </div>
 
-          <div className="action_btn">
-            <button className='text-2xl fond-bold text-base-100'>View More</button>
+          <div className="flex items-center">
+            <button className='text-xl fond-bold text-base-100 pr-2'>View More</button>
+            <FaArrowRight className='text-base-100 text-xl' />
           </div>
         </div>
 
@@ -86,6 +88,50 @@ const StakingProject = () => {
 
           </Swiper>
         </div>
+
+
+        < div className="section_head flex justify-between items-end mt-8" >
+          <div className="content staking-heading">
+            <span className='text-xl'>Exclusive</span>
+            <h2 className='text-4xl font-bold text-base-100 mt-4'>Previous IGOs</h2>
+          </div>
+
+          <div className="flex items-center">
+            <button className='text-xl fond-bold text-base-100 pr-2'>View More</button>
+            <FaArrowRight className='text-base-100 text-xl' />
+          </div>
+        </div >
+
+        <div>
+          <img src={lineBg} alt="" className='mark-img-line' />
+          {
+            igos_projects.map(item => (
+              <div className="igs-project-box p-6 rounded-3xl bg-darkBlue my-8 shadow-lg">
+                <div className="card_top flex justify-between items-center">
+                  <div className='flex items-center'>
+                    <img className='w-20 h-full rounded-lg' src={item.thumbnail} alt={item.title} />
+                    <div className='pl-4'>
+                      <h2 className='text-xl font-bold text-base-100'>{item.title}</h2>
+                      <p className='text-sm mt-2 text-base-300'>Registration in:</p>
+                    </div>
+                  </div>
+                  <img className='w-8 h-full' src={item.icon} alt="" />
+
+                  <div>
+                    <button className='btn btn-sm rounded-full'>7 Hours Ago</button>
+                  </div>
+
+                  <div>
+                    <button className='btn btn-sm rounded-full'>ATH:$2.87641</button>
+                  </div>
+                </div>
+
+              </div>
+            ))
+          }
+
+        </div>
+
       </div>
     </section>
   );
