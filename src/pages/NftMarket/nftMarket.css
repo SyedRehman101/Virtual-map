@@ -92,6 +92,93 @@
 	color: #fff;
 }
 
+.card:hover .place-bid {
+	opacity: 1;
+}
+
+.place-bid {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	visibility: visible;
+	background-image: linear-gradient(90deg, #2b81ff, #7237ff, #2b81ff);
+	background-size: 200% 100%;
+	border-radius: 5px;
+	color: #fff;
+	transition: 0.3s;
+	z-index: 999;
+	font-size: 15px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 30px;
+}
+
+.place-bid:hover {
+	color: var(--pure);
+}
+.card-action {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	transition: 0.3s;
+	z-index: 1;
+}
+
+.card-action-like {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	color: var(--pure);
+	font-size: 16px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.card-action-like-count {
+	position: absolute;
+	right: 48px;
+	top: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--pure);
+	height: 40px;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	line-height: 40px;
+	padding: 0 10px;
+	display: inline-block;
+}
+
+.card-action:hover .card-action-like-count {
+	opacity: 1;
+	visibility: visible;
+}
+
+.card-action-like:hover {
+	background: var(--primaryG);
+	color: var(--pure);
+}
+.card-action-like-count:after {
+	position: absolute;
+	content: "";
+	width: 5px;
+	height: 9px;
+	background: rgba(0, 0, 0, 0.5);
+	right: -5px;
+	-webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
+	clip-path: polygon(0 0, 100% 50%, 0 100%);
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 @media only screen and (max-width: 767px) {
 	.filter-by-search {
 		display: inherit;
