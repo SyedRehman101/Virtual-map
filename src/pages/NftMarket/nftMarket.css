@@ -179,6 +179,13 @@
 	transform: translateY(-50%);
 }
 
+.mark-img-line {
+	left: 0;
+	position: absolute;
+	bottom: -300px;
+	z-index: 1;
+}
+
 @media only screen and (max-width: 767px) {
 	.filter-by-search {
 		display: inherit;

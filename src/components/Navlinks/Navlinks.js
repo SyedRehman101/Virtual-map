@@ -15,7 +15,7 @@ const Navlinks = () => {
         <NavLink to="/Portfolio" className="uppercase">Land Map</NavLink>
       </li>
       <li>
-        <NavLink to="/Projects" className="uppercase">Staking</NavLink>
+        <NavLink to="/staking" className="uppercase">Staking</NavLink>
       </li>
       <li>
         <NavLink to="/RoadMap" className="uppercase">Community</NavLink>

@@ -1,5 +1,4 @@
 .roadmap {
-	padding-bottom: 69px;
 	position: relative;
 }
 
@@ -46,7 +45,7 @@
 	position: relative;
 }
 
-.roadmap .img-line {
+.img-line {
 	left: 0;
 	position: absolute;
 	top: 8%;

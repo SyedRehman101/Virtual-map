@@ -9,7 +9,7 @@ import './projects.css'
 
 const Projects = () => {
   return (
-    <section className='project relative lg:py-20 py-8'>
+    <section className='project relative lg:py-10'>
       <div className="pr-shape"></div>
 
       <div className="lg:max-w-screen-xl mx-auto w-full p-4">
@@ -54,10 +54,6 @@ const Projects = () => {
                     <div className="content">
                       <a className='title text-xl text-base-100' href="/nft">{item.name}</a>
                     </div>
-                  </div>
-
-                  <div className="px-2 text-light text-sm font-medium mt-3 absolute bottom-2 right-0">
-                    <span>{item?.date}</span>
                   </div>
                 </SwiperSlide>
               ))

@@ -6,6 +6,7 @@ import { BsSearch } from "react-icons/bs";
 import { HiOutlineAdjustments } from "react-icons/hi";
 import category from "./data/category";
 import NftCard from "./NftCard";
+import lineBg from '../../assets/Images/roadmapbg.png';
 const NftMarketPage = () => {
   const [nft, setNft] = useState([]);
 
@@ -60,7 +61,8 @@ const NftMarketPage = () => {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-4 grid-cols-1 gap-6 mt-12">
+        <div className="grid lg:grid-cols-4 grid-cols-1 gap-6 mt-12 relative">
+          <img src={lineBg} alt="" className='mark-img-line' />
           {
             nft.map(item => <NftCard
               key={item._id}

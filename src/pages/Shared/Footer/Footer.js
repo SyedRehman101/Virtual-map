@@ -5,8 +5,8 @@ import './footer.css'
 const Footer = () => {
   const date = new Date();
   return (
-    <footer className="lg:max-w-screen-xl w-full mx-auto p-4 mt-20">
-      <div className="footer__main">
+    <footer className="lg:max-w-screen-xl w-full mx-auto py-16">
+      <div className="footer__main pb-8">
         <div class="block-text text-center">
           <h3 class="heading text-4xl text-base-100 font-bold">Get Newsletter</h3>
           <p className='text-base-100 py-4'>Get udpated with news, tips &amp; tricks</p>
@@ -19,15 +19,15 @@ const Footer = () => {
         </form>
       </div>
 
-      <div className="footer__bottom">
-        <div className='rounded-md sm:py-2 py-1.5 md:px-12 px-8 text-center text-base ' style={{
+      <div className="grid lg:grid-cols-5 grid-cols-1 lg:gap-4 lg:justify-between justify-center items-center">
+        <div className='col-span-1 rounded-md px-12 py-4 text-base flex items-center justify-center' style={{
           background: ' linear-gradient(34deg, rgba(176,162,181,1) 22%, rgba(78,67,82,1) 89%)'
         }}>
           <p>Logo Here</p>
         </div>
 
-        <div className='text-center'>
-          <ul class="list">
+        <div className='text-center col-span-3 py-6'>
+          <ul class="flex flex-col lg:flex-row text-base-100 gap-8 justify-center">
             <li><a href="/">Home</a></li>
             <li><a href="/nfts">Explore</a></li>
             <li><a href="/about">About</a></li>
@@ -35,10 +35,10 @@ const Footer = () => {
             <li><a href="/team">Team</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
-          <p>Copyright &copy {date.getFullYear()}, Toranto. Design By Ahmmed</p>
+          <p className='mt-4'>Copyright &copy {date.getFullYear()}, Toranto. Design By Ahmmed</p>
         </div>
 
-        <ul className='list-social'>
+        <ul className='col-span-1 flex gap-4 items-center list-social'>
           <li><a href="/"><FaFacebookF className='text-base-100' /></a></li>
           <li><a href="/"><FaTwitter className='text-base-100' /></a></li>
           <li><a href="/"><FaTelegramPlane className='text-base-100' /></a></li>

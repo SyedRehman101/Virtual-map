@@ -54,6 +54,5 @@
 	opacity: 1 !important;
 }
 .projectSlider .swiper-pagination-bullet-active {
-	width: 100px !important;
 	background-color: var(--primary) !important;
 }

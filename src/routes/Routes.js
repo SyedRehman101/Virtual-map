@@ -14,6 +14,7 @@ import Portfolio from "../pages/Portfolio/Portfolio";
 import Projects from "../pages/Projects/Projects";
 import RoadMap from "../pages/RoadMap/RoadMap";
 import Speciality from "../pages/Speciality/Speciality";
+import Staking from "../pages/Staking/Staking";
 import Team from "../pages/Team/Team";
 const Router = createBrowserRouter([
   {
@@ -55,8 +56,8 @@ const Router = createBrowserRouter([
         element: <NftMarketPage></NftMarketPage>
       },
       {
-        path: '/Portfolio',
-        element: <Portfolio></Portfolio>
+        path: '/staking',
+        element: <Staking></Staking>
       },
       {
         path: '/Projects',

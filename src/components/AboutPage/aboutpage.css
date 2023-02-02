@@ -13,3 +13,10 @@
 	margin-bottom: 22px;
 	padding: 7px 14px;
 }
+
+.img-line {
+	left: 0;
+	position: absolute;
+	top: 8%;
+	z-index: 1;
+}

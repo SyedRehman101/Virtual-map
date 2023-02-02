@@ -29,27 +29,10 @@
 	margin-top: 30px;
 }
 
-.footer__bottom {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 100px 0;
-}
-
-.footer__bottom .list {
-	display: flex;
-	margin-bottom: 16px;
-	margin-left: 22px;
-}
-
-.footer__bottom .list li {
-	margin: 0 16px;
-}
-
 .footer__bottom .list li a {
 	color: #fff;
 }
 
-.footer__bottom .list-social {
+.list-social {
 	margin-top: 0;
 }
