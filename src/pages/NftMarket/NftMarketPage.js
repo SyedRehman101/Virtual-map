@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "swiper/css";
 import CategoryItem from "./CategoryItem";
 import "./nftMarket.css";
@@ -7,6 +7,14 @@ import { HiOutlineAdjustments } from "react-icons/hi";
 import category from "./data/category";
 import NftCard from "./NftCard";
 const NftMarketPage = () => {
+  const [nft, setNft] = useState([]);
+
+  useEffect(() => {
+    fetch('nft.json')
+      .then(res => res.json())
+      .then(data => setNft(data));
+  }, []);
+
   return (
     <section className="artworks-area">
       <div className="lg:max-w-screen-xl w-full mx-auto p-4">
@@ -30,7 +38,7 @@ const NftMarketPage = () => {
                   </select>
 
                   <div class="filter-search-input">
-                    <input type="text" placeholder="Search keyword" />
+                    <input type="text" placeholder="Search keyword" className="input" />
                     <button type="submit">
                       <BsSearch />
                     </button>
@@ -52,10 +60,17 @@ const NftMarketPage = () => {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-4 grid-cols-1 gap-4">
-          <div className="nftcard">
-            <NftCard></NftCard>
-          </div>
+        <div className="grid lg:grid-cols-4 grid-cols-1 gap-6 mt-12">
+          {
+            nft.map(item => <NftCard
+              key={item._id}
+              seller={item.seller}
+              name={item.name}
+              price={item.price}
+              image={item.image}
+            ></NftCard>)
+          }
+
         </div>
       </div>
     </section>

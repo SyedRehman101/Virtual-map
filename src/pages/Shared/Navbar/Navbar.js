@@ -7,6 +7,7 @@ import Navlinks from '../../../components/Navlinks/Navlinks';
 import UseSticky from '../../../hooks/UseSticky';
 import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
+import ConnectPopUp from '../ConnectPopup/ConnectPopUp';
 
 
 const Navbar = () => {
@@ -36,7 +37,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className='home-large-connectWalletBtn bg-primary py-2 rounded-md text-center text-pure px-6 hover:bg-primary hover:bg-opacity-59 cursor-pointer'>
-          <label onClick={() => setOpenPopPup(true)} htmlFor="my-modal-6" className='cursor-pointer' >Connect Wallet</label>
+          <label onClick={() => setOpenPopPup(true)} htmlFor="wallet_connect_modal" className='cursor-pointer' >Connect Wallet</label>
         </div>
 
         <div className={`hamburger ${showDrawer ? 'change' : ''}`}
@@ -47,6 +48,10 @@ const Navbar = () => {
         </div>
 
       </div >
+
+      {
+        openPopUp && <ConnectPopUp />
+      }
     </header>
   );
 };
