@@ -24,7 +24,7 @@ const Navbar = () => {
             <p>Logo Here</p>
           </div>
         </div>
-        <div className='main__navlinks'>
+        <div className='main__navlinks hidden lg:block'>
           <Navlinks />
         </div>
         <div className='flex items-center gap-4 text-pure font-semibold downloadBtnContainer'>

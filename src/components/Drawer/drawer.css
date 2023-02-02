@@ -4,6 +4,7 @@
 }
 .m-nav.show {
 	transform: translateX(0);
+	z-index: 1000;
 }
 
 @media (max-width: 440px) {

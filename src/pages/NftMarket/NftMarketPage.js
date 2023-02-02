@@ -23,8 +23,8 @@ const NftMarketPage = () => {
         </div>
 
         <div className="search_filter mt-6">
-          <div className="grid grid-cols-3 gap-4">
-            <div className="col-span-2">
+          <div className="grid lg:grid-cols-3 grid-cols-1 gap-4">
+            <div className="lg:col-span-2">
               <form action="" className="form">
                 <div className="filter-by-search">
                   <select className="select item-category-select">

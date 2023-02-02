@@ -91,3 +91,25 @@
 	width: 65%;
 	color: #fff;
 }
+
+@media only screen and (max-width: 767px) {
+	.filter-by-search {
+		display: inherit;
+	}
+
+	.filter-search-input {
+		margin-top: 20px;
+	}
+
+	.filter-search-input input {
+		border-radius: 10px;
+	}
+
+	.item-category-select {
+		border-radius: 10px;
+	}
+
+	.select-category-title {
+		width: 50%;
+	}
+}

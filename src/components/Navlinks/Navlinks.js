@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navlinks = () => {
   return (
-    <ul className='w-full flex items-center gap-6 text-pure text-semibold'>
+    <ul className='w-full flex lg:flex-row flex-col lg:items-center gap-6 text-pure text-semibold'>
       <li>
         <NavLink to="/" className="uppercase">Home</NavLink>
       </li>
