@@ -90,8 +90,6 @@ const Team = () => {
 
       </div>
 
-
-
     </section>
   );
 };

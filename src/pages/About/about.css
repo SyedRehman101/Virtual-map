@@ -70,6 +70,7 @@
 	object-fit: cover;
 	width: 222px;
 }
+
 .about .about-left .images .img4 {
 	animation: animate-2 15s linear 0s infinite;
 	height: 117px;

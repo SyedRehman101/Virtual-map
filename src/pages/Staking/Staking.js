@@ -3,6 +3,9 @@ import './staking.css';
 import stakingBg from '../../assets/Nft-Market_img/hero_bg.jpeg';
 import StakingHero from '../../components/StakingHero/StakingHero';
 import StakingProject from '../../components/StakingHero/StakingProject';
+import MultiChain from '../../components/StakingHero/MultiChain';
+import Team from '../Team/Team';
+import Participant from '../../components/StakingHero/Participant';
 
 const Staking = () => {
   return (
@@ -11,6 +14,9 @@ const Staking = () => {
         <StakingHero></StakingHero>
       </section>
       <StakingProject></StakingProject>
+      <MultiChain></MultiChain>
+      <Team></Team>
+      <Participant></Participant>
     </>
   );
 };
