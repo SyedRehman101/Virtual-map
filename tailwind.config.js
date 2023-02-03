@@ -7,15 +7,16 @@ module.exports = {
     extend: {
       colors: {
         "primary": "var(--primary)",
-        "darkBlue": "var(--darkBlue)",
-        "yellow": "var(--yellow)",
+        "primaryHover": "var(--primaryHover)",
+        "primaryG": "var(--primaryG)",
         "primaryLight": "var(--primaryLight)",
         "primaryDark": "var(--primaryDark)",
+        "darkBlue": "var(--darkBlue)",
         "pure": "var(--pure)",
         "light": "var(--light)",
         "dark": "var(--dark)",
         "darkLight": "var(--darkLight)",
-        "primaryHover": "var(--primaryHover)"
+        "yellow": "var(--yellow)"
       }
     },
   },

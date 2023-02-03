@@ -106,7 +106,7 @@ const StakingProject = () => {
 
           {
             igos_projects.map(item => (
-              <div className="igs-project-box p-6 rounded-3xl bg-darkBlue my-8 shadow-lg">
+              <div className="igs-project-box p-6 rounded-3xl bg-primaryDark my-8 shadow-lg">
                 <div className="card_top flex justify-between items-center">
                   <div className='flex items-center'>
                     <img className='w-20 h-full rounded-lg' src={item.thumbnail} alt={item.title} />

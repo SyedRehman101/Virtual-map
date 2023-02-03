@@ -62,7 +62,7 @@
 }
 
 .filter-search-input input[type="text"] {
-	color: #fff;
+	color: var(--pure);
 }
 .filter-search-input button {
 	position: absolute;
@@ -104,7 +104,7 @@
 	transform: translate(-50%, -50%);
 	opacity: 0;
 	visibility: visible;
-	background-image: linear-gradient(90deg, #2b81ff, #7237ff, #2b81ff);
+	background: var(--primaryG);
 	background-size: 200% 100%;
 	border-radius: 5px;
 	color: #fff;

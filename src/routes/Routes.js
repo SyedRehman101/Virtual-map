@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
 import About from "../pages/About/About";
 import AboutPage from "../pages/About/AboutPage";
+import Dao from "../pages/Dao/Dao";
 import Collection from "../pages/Faq/Collection";
 import CryptoFaq from "../pages/Faq/CryptoFaq";
 import CryptoTrade from "../pages/Faq/CryptoTrade";
@@ -60,8 +61,8 @@ const Router = createBrowserRouter([
         element: <Staking></Staking>
       },
       {
-        path: '/Projects',
-        element: <Projects></Projects>
+        path: '/dao',
+        element: <Dao></Dao>
       },
       {
         path: '/RoadMap',

@@ -3,12 +3,22 @@ import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import category from './data/category';
 import "swiper/css";
+import "swiper/css/navigation";
+
+import { Autoplay } from "swiper";
+
 const CategoryItem = () => {
   return (
     <Swiper
       slidesPerView={6}
       spaceBetween={20}
       className="brandSlider"
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+
+      modules={[Autoplay]}
       breakpoints={{
         1100: {
           slidesPerView: 4

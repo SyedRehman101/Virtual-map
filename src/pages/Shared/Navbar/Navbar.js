@@ -36,7 +36,7 @@ const Navbar = () => {
             <img src={ArrowDown} alt="bell" />
           </div>
         </div>
-        <div className='home-large-connectWalletBtn bg-primary py-2 rounded-md text-center text-pure px-6 hover:bg-primary hover:bg-opacity-59 cursor-pointer'>
+        <div className='home-large-connectWalletBtn bg-primaryG py-2 rounded-md text-center text-pure px-6 hover:bg-primary hover:bg-opacity-59 cursor-pointer'>
           <label onClick={() => setOpenPopPup(true)} htmlFor="wallet_connect_modal" className='cursor-pointer' >Connect Wallet</label>
         </div>
 
