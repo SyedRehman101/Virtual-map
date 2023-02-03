@@ -46,7 +46,7 @@ const StakingProject = () => {
             {
               igos_projects.map(item => (
                 <SwiperSlide>
-                  <div className="igs-project-box p-6 rounded-3xl bg-darkBlue">
+                  <div className="igs-project-box p-6 rounded-3xl bg-primaryDark">
                     <div className="card_top flex justify-between">
                       <img className='w-20 h-full rounded-lg' src={item.thumbnail} alt={item.title} />
                       <div>

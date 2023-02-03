@@ -34,8 +34,6 @@ const Participant = () => {
           </div>
         </div>
 
-
-
         <div className='mt-16'>
           <div className="card" style={{ backgroundImage: `linear-gradient(0deg, #090919, rgba(9, 10, 26, 0.8)), url(${stakingBg})` }}>
             <div className="grid lg:grid-cols-2 grid-cols-1">

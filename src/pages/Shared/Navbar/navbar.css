@@ -21,7 +21,7 @@
 .sticky {
 	position: fixed;
 	top: 0;
-	background: #15153f;
+	background: var(--primaryDark);
 	z-index: 9;
 	box-shadow: 5px 3px 15px 1px #030313;
 }

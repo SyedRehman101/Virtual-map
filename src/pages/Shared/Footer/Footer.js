@@ -1,12 +1,16 @@
 import React from 'react';
 import { FaFacebookF, FaTelegramPlane, FaTwitter } from 'react-icons/fa';
+import Create from '../../Create/Create';
 import './footer.css'
 
 const Footer = () => {
   const date = new Date();
   return (
     <footer className="lg:max-w-screen-xl w-full mx-auto py-16">
-      <div className="footer__main pb-8">
+
+      <Create></Create>
+
+      <div className="footer__main mt-20">
         <div class="block-text text-center">
           <h3 class="heading text-4xl text-base-100 font-bold">Get Newsletter</h3>
           <p className='text-base-100 py-4'>Get udpated with news, tips &amp; tricks</p>
@@ -35,7 +39,7 @@ const Footer = () => {
             <li><a href="/team">Team</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
-          <p className='mt-4'>Copyright &copy {date.getFullYear()}, Toranto. Design By Ahmmed</p>
+          <p className='mt-4 text-primaryLight'>Copyright &copy {date.getFullYear()}, Toranto. Design By Ahmmed</p>
         </div>
 
         <ul className='col-span-1 flex gap-4 items-center list-social'>

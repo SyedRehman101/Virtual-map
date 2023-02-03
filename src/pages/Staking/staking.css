@@ -102,12 +102,12 @@
 }
 
 .card {
-	padding: 1.5rem;
+	padding: 1rem;
 	border: none;
 	border-radius: 8px;
-	background-color: var(--darkBlue);
-	-webkit-box-shadow: 0 3px 20px 0px var(--darkBlue);
-	box-shadow: 0 3px 20px 0px var(--darkBlue);
+	background-color: var(--primaryDark);
+	-webkit-box-shadow: 0 3px 20px 0px var(--primaryDark);
+	box-shadow: 0 3px 20px 0px var(--primaryDark);
 	-webkit-transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
 	transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
 	-webkit-transition-duration: 0.3s;

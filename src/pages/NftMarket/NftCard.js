@@ -3,8 +3,8 @@ import { BsHeart } from 'react-icons/bs';
 
 const NftCard = ({ seller, name, image, price }) => {
   return (
-    <div className="card shadow-xl bg-darkBlue rounded-md">
-      <div className='p-4 relative'>
+    <div className="card shadow-xl bg-primaryDark rounded-md">
+      <div className='relative'>
         <img src={image} alt="Shoes" className="rounded-xl w-[300px] h-[300px]" />
         <button className='place-bid'>Place Bid</button>
       </div>

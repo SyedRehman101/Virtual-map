@@ -20,7 +20,6 @@ const Home = () => {
       <RoadMap></RoadMap>
       <Team></Team>
       <Faq></Faq>
-      <Create></Create>
     </>
   );
 };

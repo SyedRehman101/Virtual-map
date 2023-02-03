@@ -12,13 +12,13 @@
 body {
 	font-family: "Oswald", sans-serif;
 	font-family: "Poppins", sans-serif;
-	background-color: #070a29;
+	background-color: var(--primary);
 	overflow-x: hidden;
 	position: relative;
 }
 
 :root {
-	--primary: #62137d;
+	--primary: #30083d;
 	--primaryHover: #4e0866;
 	--primaryG: rgb(175, 68, 212);
 	--darkBlue: #06021a;
