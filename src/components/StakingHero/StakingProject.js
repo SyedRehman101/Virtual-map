@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css/pagination";
 import 'swiper/css';
@@ -7,6 +7,13 @@ import { FaFacebookF, FaTelegramPlane, FaTwitter, FaArrowRight } from 'react-ico
 import lineBg from '../../assets/Images/roadmapbg.png';
 
 const StakingProject = () => {
+  const [numOfElement, setNumOfElement] = useState(3);
+
+  const handleLoadMore = () => {
+    setNumOfElement(numOfElement + 1)
+  }
+
+  const data = igos_projects.slice(0, numOfElement);
   return (
     <section className='staking-project py-20 relative'>
       <div className="lg:max-w-screen-xl w-full mx-auto">
@@ -87,6 +94,7 @@ const StakingProject = () => {
             }
 
           </Swiper>
+
         </div>
 
 
@@ -105,7 +113,7 @@ const StakingProject = () => {
         <div>
 
           {
-            igos_projects.map(item => (
+            data.map(item => (
               <div className="igs-project-box p-6 rounded-3xl bg-primaryDark my-8 shadow-lg">
                 <div className="card_top flex justify-between items-center">
                   <div className='flex items-center'>
@@ -131,7 +139,13 @@ const StakingProject = () => {
           }
 
         </div>
+
+
         <img src={lineBg} alt="" className='mark-img-line' />
+
+        <div className='text-center loadmore mt-20'>
+          <button onClick={handleLoadMore} className='btn bg-primaryDark border-0 w-96'>Load More</button>
+        </div>
       </div>
     </section>
   );

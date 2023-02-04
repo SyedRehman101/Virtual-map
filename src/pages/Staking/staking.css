@@ -134,3 +134,13 @@
 	outline: none;
 	padding: 10px 20px;
 }
+
+.loadmore {
+	z-index: 1;
+	cursor: pointer;
+	position: relative;
+}
+.loadmore button:hover {
+	background-color: var(--primaryG);
+	color: var(--pure);
+}
