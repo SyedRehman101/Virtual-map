@@ -5,8 +5,8 @@ const StakingHero = () => {
     <div className="lg:max-w-screen-xl w-full mx-auto">
       <div className="staking-content text-center">
         <span className='text-primaryG text-2xl font-bold'>Gameon</span>
-        <h1 className='lg:text-7xl text-3xl font-black text-base-100 lg:px-48 px-4 leading-snug py-8'>The Next Generation Web 3.0 IGO Launchpad</h1>
-        <p className='lg:text-xl text-md text-slate-400 px-4'>Full-scale Blockchain Gaming Ecosystem for IGOs & NFT Pre-Sales</p>
+        <h1 className='lg:text-7xl text-3xl font-black text-base-100 lg:px-48 px-4 leading-snug py-8'>Maximize Your Earnings with Laaverse Coin</h1>
+        <p className='lg:text-xl text-md text-slate-400 px-4'>Stake and Reap the Rewards Today</p>
 
 
         <div className="flex justify-center gap-4 mt-8">

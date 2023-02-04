@@ -7,7 +7,7 @@ import lineBg from '../../assets/Images/roadmapbg.png';
 
 const AboutPage = () => {
   return (
-    <section className='about__page relative'>
+    <section className='about__page relative mt-10'>
       <AboutHome></AboutHome>
       <Counter></Counter>
       <Portfolio></Portfolio>

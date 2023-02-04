@@ -13,10 +13,10 @@ const Portfolio = () => {
   return (
     <section className='portfolio'>
       <div className="pf-shape"></div>
-      <div className='lg:max-w-screen-xl mx-auto w-full p-4'>
+      <div className='lg:max-w-screen-xl mx-auto w-full p-4 z-50 relative'>
         <div class="block-text text-center">
-          <h6 class="sub-heading"><span>Join NFT Portfolio</span></h6>
-          <h3 class="heading lg:text-4xl text-2xl text-base-100 font-bold leading-normal">Become a Cyfonii Player Now</h3>
+          <h6 class="sub-heading"><span> Laaverse Creator Studio</span></h6>
+          <h3 class="heading lg:text-4xl text-2xl text-base-100 font-bold leading-normal">Unleash Your Inner Creator</h3>
         </div>
 
         <div className="grid lg:grid-cols-2 grid-cols-1 mt-20">

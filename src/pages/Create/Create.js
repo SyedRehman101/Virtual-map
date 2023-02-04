@@ -9,10 +9,10 @@ const Create = () => {
         <div className="create__main grid grid-cols-2 items-center">
           <div className="content p-6">
             <h4 className="heading text-base-100 font-bold text-3xl">
-              Create your NFT portfolio
+              Join Our Community
             </h4>
-            <p className='py-6 text-base-100 text-sm'>Get udpated with news, tips & tricks</p>
-            <a href="/" className='action-btn'><span>Join Now</span></a>
+            <p className='py-6 text-base-100 text-xl'>Start Exploring the Metaverse Today</p>
+            <button className='btn btn-secondary btn-lg hover:btn-warning'><span>Join Now</span></button>
           </div>
           <img className='w-1/3' src={footer_main} alt="" />
         </div>

@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="from-group text-center">
             <input type="email" placeholder="Your Email" className="input input-bordered input-info w-full max-w-screen-sm form-control" />
           </div>
-          <button class="action-btn"><span>Subscribe</span></button>
+          <button class="btn btn-primary hover:btn-info btn-lg mt-8"><span>Subscribe</span></button>
         </form>
       </div>
 

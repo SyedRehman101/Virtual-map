@@ -33,6 +33,12 @@
 	z-index: 2;
 }
 
+.Laaverse {
+	top: 100px;
+	left: 100px;
+	height: 600px;
+}
+
 .speciality-box .icon {
 	align-items: center;
 	background: linear-gradient(289.89deg, #dec7ff -23.71%, #5c27fe 96.09%);

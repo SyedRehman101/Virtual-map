@@ -19,8 +19,8 @@ const StakingProject = () => {
       <div className="lg:max-w-screen-xl w-full mx-auto">
         <div className="section_head flex justify-between items-end">
           <div className="content staking-heading">
-            <span className='text-xl'>Projects</span>
-            <h2 className='text-4xl font-bold text-base-100 mt-4'>Upcoming IGOs</h2>
+            <span className='text-xl'>Laaverse</span>
+            <h2 className='text-4xl font-bold text-base-100 mt-4'>Upcoming Staking</h2>
           </div>
 
           <div className="flex items-center">
@@ -101,7 +101,7 @@ const StakingProject = () => {
         < div className="section_head flex justify-between items-end mt-8" >
           <div className="content staking-heading">
             <span className='text-xl'>Exclusive</span>
-            <h2 className='text-4xl font-bold text-base-100 mt-4'>Previous IGOs</h2>
+            <h2 className='text-4xl font-bold text-base-100 mt-4'>Previous Staking</h2>
           </div>
 
           <div className="flex items-center">

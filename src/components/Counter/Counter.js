@@ -11,9 +11,9 @@ const Counter = () => {
       <div className="lg:max-w-screen-xl w-full mx-auto p-4">
         <div className="couter__main">
           <div className="couter-list flex">
-            <CounterBox icon={<FaUsers />} text="Register User" number="100" />
-            <CounterBox icon={<FaImages />} text="Register User" number="100" />
-            <CounterBox icon={<AiFillPieChart />} text="Register User" number="100" />
+            <CounterBox icon={<FaUsers />} text="Residential" number="100" />
+            <CounterBox icon={<FaImages />} text="Commercial" number="100" />
+            <CounterBox icon={<AiFillPieChart />} text="Industrial" number="100" />
             <div className="image">
               <img src={counterBg} alt="" />
             </div>

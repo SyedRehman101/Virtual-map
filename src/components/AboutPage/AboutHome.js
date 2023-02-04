@@ -7,7 +7,7 @@ const AboutHome = () => {
     <div className='lg:max-w-screen-xl mx-auto w-full p-4 relative'>
       <div className="block-text text-center pb-8">
         <h6 className="sub-heading"><span>About Us</span></h6>
-        <h3 className="heading lg:text-4xl text-2xl font-bold text-base-100">Hight Quality NFT Collections
+        <h3 className="heading lg:text-4xl text-2xl font-bold text-base-100">Explore Our Limitless Laaverse
         </h3>
       </div>
 

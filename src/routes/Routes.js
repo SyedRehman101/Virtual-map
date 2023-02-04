@@ -52,6 +52,10 @@ const Router = createBrowserRouter([
         element: <NftMarketPage></NftMarketPage>
       },
       {
+        path: '/landmap',
+        element: <RoadMap></RoadMap>
+      },
+      {
         path: '/staking',
         element: <Staking></Staking>
       },
@@ -59,10 +63,7 @@ const Router = createBrowserRouter([
         path: '/dao',
         element: <Dao></Dao>
       },
-      {
-        path: '/RoadMap',
-        element: <RoadMap></RoadMap>
-      },
+
       {
         path: '/TeamMember',
         element: <Team></Team>
