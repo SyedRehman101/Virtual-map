@@ -1,11 +1,13 @@
 import React from 'react';
-import './faq.css'
-import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import { Fade } from 'react-reveal';
+import { Outlet, useLocation } from 'react-router';
+import { NavLink } from 'react-router-dom';
 
-const Faq = () => {
+
+const FaqsPage = () => {
   const location = useLocation();
-  const path = location.pathname.replace('/', '');
+  const path = location.pathname;
+  console.log(path)
   return (
     <section className="faq">
       <div className="lg:max-w-screen-xl w-full mx-auto p-4">
@@ -22,11 +24,10 @@ const Faq = () => {
 
         <div className='faq__main mt-8'>
           <ul>
-            <li className={`${path?.includes('/faqs') && 'active'} `}><NavLink to='/Crypto'>Cryptocurrency</NavLink></li>
-            <li className={`${path?.includes('Crypto') && 'active'} `}><NavLink to='/Crypto'>Cryptocurrency</NavLink></li>
-            <li className={`${path?.includes('/faqs/NftToken') && 'active'}`}><NavLink to='/NftToken'>NFT Token</NavLink></li>
-            <li className={`${path?.includes('/faqs/Collection') && 'active'}`}><NavLink to='/Collection'>Collection</NavLink></li>
-            <li className={`${path?.includes('/faqs/CryptoTrade') && 'active'}`}><NavLink to='/CryptoTrade'>Crypto Trading</NavLink></li>
+            <li className={`${path.includes('Crypto') && 'active'} `}><NavLink to='/faqs/Crypto'>Cryptocurrency</NavLink></li>
+            <li className={`${path.includes('NftToken') && 'active'}`}><NavLink to='/faqs/NftToken'>NFT Token</NavLink></li>
+            <li className={`${path.includes('Collection') && 'active'}`}><NavLink to='/faqs/Collection'>Collection</NavLink></li>
+            <li className={`${path.includes('CryptoTrade') && 'active'}`}><NavLink to='/faqs/CryptoTrade'>Crypto Trading</NavLink></li>
           </ul>
         </div>
 
@@ -38,4 +39,4 @@ const Faq = () => {
   );
 };
 
-export default Faq;
+export default FaqsPage;

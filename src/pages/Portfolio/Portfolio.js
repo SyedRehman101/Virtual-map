@@ -1,6 +1,6 @@
 import React from 'react';
 import './portfolio.css';
-import protfolio from '../../assets/Images/portfolio-banner.png'
+import protfolio from '../../assets/Images/portfolio_main.png'
 import PortfolioBox from './PortfolioBox';
 import icon1 from '../../assets/svg/icon1.svg';
 import icon2 from '../../assets/svg/icon2.svg';

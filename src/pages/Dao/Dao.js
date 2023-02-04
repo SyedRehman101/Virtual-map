@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import doa from '../../assets/Images/dao.png';
+import doa from '../../assets/Images/doa_main.jpeg';
 import { BiSort } from "react-icons/bi";
 const Dao = () => {
   const [swap, setSwap] = useState(false);
@@ -26,13 +26,13 @@ const Dao = () => {
               {
                 swap ?
                   <label className="label">
-                    <span className="label-text text-pure">XMETA</span>
+                    <span className="label-text text-pure">LAA</span>
                     <span className="label-text text-pure">Balance: 0</span>
                   </label>
                   :
 
                   <label className="label">
-                    <span className="label-text text-pure">veXMETA</span>
+                    <span className="label-text text-pure">ETHER</span>
                     <span className="label-text text-pure">Balance: 0000000</span>
                   </label>
               }
@@ -52,11 +52,11 @@ const Dao = () => {
               {
                 swap ?
                   <label className="label">
-                    <span className="label-text text-pure">veXMETA</span>
+                    <span className="label-text text-pure">ETHER</span>
                     <span className="label-text text-pure">Balance: 0000000</span>
                   </label> :
                   <label className="label">
-                    <span className="label-text text-pure">XMETA</span>
+                    <span className="label-text text-pure">LAA</span>
                     <span className="label-text text-pure">Balance: 0</span>
                   </label>
               }

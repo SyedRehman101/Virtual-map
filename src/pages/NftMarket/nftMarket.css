@@ -7,7 +7,7 @@
 	color: #fff;
 	border: 1px solid transparent;
 	backdrop-filter: blur(2px);
-	background: hsla(0, 0%, 100%, 0.1);
+	background: var(--primaryG);
 	display: inline-flex;
 	align-items: center;
 	height: 50px;
@@ -37,7 +37,7 @@
 	color: #fff;
 	font-weight: 600;
 	backdrop-filter: blur(2px);
-	background: hsla(0, 0%, 100%, 0.1);
+	background: var(--primaryG);
 	border-right-color: hsla(0, 0%, 100%, 0.1);
 	padding: 0 15px;
 }
@@ -51,19 +51,24 @@
 	height: 50px;
 	border: 1px solid hsla(0, 0%, 100%, 0.1);
 	backdrop-filter: blur(2px);
-	background: hsla(0, 0%, 100%, 0.1);
+	background: var(--primaryG);
 	border-radius: 0 10px 10px 0;
 	outline: none;
 	padding: 0 50px 0 20px;
 }
 
-.card {
-	border: 1px solid hsla(0, 0%, 100%, 0.1);
+.filter-search-input input[type="text"]::placeholder {
+	color: var(--pure);
 }
 
 .filter-search-input input[type="text"] {
 	color: var(--pure);
 }
+
+.card {
+	border: 1px solid var(--primaryDark);
+}
+
 .filter-search-input button {
 	position: absolute;
 	right: 20px;
@@ -79,14 +84,14 @@
 	padding-left: 20px;
 	border: 1px solid hsla(0, 0%, 100%, 0.1);
 	border-right-color: hsla(0, 0%, 100%, 0.1);
-	background: hsla(0, 0%, 100%, 0.1);
+	background: var(--primaryG);
 }
 
 .sale-category-select {
 	height: 50px;
 	border: 1px solid hsla(0, 0%, 100%, 0.1);
 	border-radius: 0 10px 10px 0;
-	background: hsla(0, 0%, 100%, 0.1);
+	background: var(--primaryG);
 	padding: 0 15px;
 	width: 65%;
 	color: #fff;

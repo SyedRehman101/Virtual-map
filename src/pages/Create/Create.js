@@ -1,7 +1,6 @@
 import React from 'react';
 import './create.css';
-import bg from '../../assets/Images/create-bg.png'
-import bg2 from '../../assets/Images/createbg2.png'
+import footer_main from '../../assets/Images/footer_main.png'
 
 const Create = () => {
   return (
@@ -15,7 +14,7 @@ const Create = () => {
             <p className='py-6 text-base-100 text-sm'>Get udpated with news, tips & tricks</p>
             <a href="/" className='action-btn'><span>Join Now</span></a>
           </div>
-          <img src={bg2} alt="" />
+          <img className='w-1/3' src={footer_main} alt="" />
         </div>
       </div>
     </section >

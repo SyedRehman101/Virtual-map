@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.css';
 import img1 from '../../assets/Images/about_1.png'
-import img2 from '../../assets/Images/about_2.png'
+import about_main from '../../assets/Images/about_main.jpeg'
 import img3 from '../../assets/Images/about_3.png'
 import img4 from '../../assets/Images/about_4.png'
 import img5 from '../../assets/Images/about_5.png'
@@ -14,7 +14,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 grid-cols-1">
           <div className='about-left'>
             <div className="images">
-              <img src={img2} alt="" className="img2" />
+              <img src={about_main} alt="" className="img2" />
               <img src={img1} alt="" className="img1" />
               <img src={img3} alt="" className="img3" />
               <img src={img4} alt="" className="img4" />

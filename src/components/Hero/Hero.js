@@ -1,5 +1,5 @@
 import React from 'react';
-import bg from '../../assets/Images/home-banner.png';
+import bg from '../../assets/Images/home-banner.jpeg';
 import Owner from '../../assets/Images/cartoon.png';
 import ethereum from '../../assets/Images/ethereum.png';
 import BlueBlur from '../../blur/BlueBlur';

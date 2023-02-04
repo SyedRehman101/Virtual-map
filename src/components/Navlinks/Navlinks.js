@@ -24,20 +24,20 @@ const Navlinks = () => {
           <label tabIndex={0} className="cursor-pointer uppercase">Community <BsFillCaretDownFill className='inline' /></label>
           <div tabIndex={0} className="dropdown-content menu p-6 mt-7 shadow-lg bg-primaryDark rounded-box  w-[150px]">
             <div className='flex justify-between mb-6'>
-              <button><FaYoutube className='text-3xl' /></button>
-              <button><BsTwitter className='text-3xl' /></button>
+              <button><FaYoutube className='text-3xl hover:text-primaryG transition ease-in-out delay-50' /></button>
+              <button><BsTwitter className='text-3xl hover:text-primaryG transition ease-in-out delay-50' /></button>
             </div>
             <div className='flex justify-between mb-6'>
-              <button><BsGithub className='text-3xl' /></button>
-              <button><BsGoogle className='text-3xl' /></button>
+              <button><BsGithub className='text-3xl hover:text-primaryG transition ease-in-out delay-50' /></button>
+              <button><BsGoogle className='text-3xl hover:text-primaryG transition ease-in-out delay-50' /></button>
             </div>
             <div className='flex justify-between mb-6'>
-              <button><BsLinkedin className='text-3xl' /></button>
-              <button><BsPinterest className='text-3xl' /></button>
+              <button><BsLinkedin className='text-3xl hover:text-primaryG transition ease-in-out delay-50' /></button>
+              <button><BsPinterest className='text-3xl hover:text-primaryG transition ease-in-out delay-50' /></button>
             </div>
             <div className='flex justify-between mb-2'>
-              <button><BsSkype className='text-3xl' /></button>
-              <button><BsTwitch className='text-3xl' /></button>
+              <button><BsSkype className='text-3xl hover:text-primaryG transition ease-in-out delay-50' /></button>
+              <button><BsTwitch className='text-3xl hover:text-primaryG transition ease-in-out delay-50' /></button>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@ const Navlinks = () => {
         <NavLink to="/dao" className="uppercase">Doa</NavLink>
       </li>
       <li>
-        <NavLink to="/Faqs" className="uppercase">Faqs</NavLink>
+        <NavLink to="/faqs" className="uppercase">Faqs</NavLink>
       </li>
     </ul>
   );

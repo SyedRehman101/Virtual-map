@@ -8,7 +8,7 @@ const CryptoFaq = () => {
     <>
       <div className='faq-left'>
         <FaqItem
-          question="When the musics over turn off the light?"
+          question="When the musics over turn off the CryptoFaq?"
           answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tellus aliquam parturient erat id vel, condimentum a,hendrerit egestas. Auctor cras diam, dui pulvinar elit. Egestas feugiat gravida in imperdiet facilisi tortor ac ultrices venenatis."
         ></FaqItem>
         <FaqItem
