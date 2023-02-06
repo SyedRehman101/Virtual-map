@@ -8,6 +8,7 @@ import UseSticky from '../../../hooks/UseSticky';
 import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
 import ConnectPopUp from '../ConnectPopup/ConnectPopUp';
+import logo from '../../../assets/Images/logo.png'
 
 
 const Navbar = () => {
@@ -17,12 +18,8 @@ const Navbar = () => {
   return (
     <header className='header'>
       <div ref={stickyRef} className={classNames("navbar flex items-center justify-between bg-primaryDark gap-2  xl:px-8 py-4 sm:px-4 px-2 ", { sticky })}>
-        <div>
-          <div className='rounded-md sm:py-2 py-1.5 md:px-12 px-8 text-center text-base ' style={{
-            background: ' linear-gradient(34deg, rgba(176,162,181,1) 22%, rgba(78,67,82,1) 89%)'
-          }}>
-            <p>Logo Here</p>
-          </div>
+        <div className='w-[200px]'>
+          <img src={logo} alt="company logo" />
         </div>
         <div className='main__navlinks hidden lg:block'>
           <Navlinks />

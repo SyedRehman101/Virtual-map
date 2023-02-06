@@ -71,7 +71,15 @@
 }
 
 @media only screen and (max-width: 767px) {
-	.speciality {
-		padding: 0px;
+	.video-container {
+		position: relative;
+	}
+
+	.video-container .react-player {
+		position: relative;
+		top: 37px;
+		left: 0;
+		width: 100% !important;
+		height: 100% !important;
 	}
 }

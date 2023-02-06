@@ -2,6 +2,7 @@ import React from 'react';
 import { FaFacebookF, FaTelegramPlane, FaTwitter } from 'react-icons/fa';
 import Create from '../../Create/Create';
 import './footer.css'
+import logo from '../../../assets/Images/logo.png'
 
 const Footer = () => {
   const date = new Date();
@@ -24,10 +25,8 @@ const Footer = () => {
       </div>
 
       <div className="grid lg:grid-cols-5 grid-cols-1 lg:gap-4 lg:justify-between justify-center items-center">
-        <div className='col-span-1 rounded-md px-12 py-4 text-base flex items-center justify-center' style={{
-          background: ' linear-gradient(34deg, rgba(176,162,181,1) 22%, rgba(78,67,82,1) 89%)'
-        }}>
-          <p>Logo Here</p>
+        <div className='col-span-1 w-[350px] rounded-md px-12 py-4 text-base flex items-center justify-center'>
+          <img src={logo} alt="company log" />
         </div>
 
         <div className='text-center col-span-3 py-6'>
