@@ -76,15 +76,16 @@
 
 .banner__right .price {
 	align-items: center;
-	-webkit-animation: animate-1 15s linear 0s infinite;
-	animation: animate-1 15s linear 0s infinite;
+	-webkit-animation: right-to-left 10s ease-in-out infinite;
+	animation: right-to-left 10s ease-in-out infinite;
 	background: #fff;
 	border-radius: 30px;
 	display: flex;
 	padding: 20px;
 	position: absolute;
+	top: 20%;
 	right: 0;
-	top: 168px;
+	transform: translateY(-50%);
 	z-index: 3;
 }
 
@@ -95,13 +96,14 @@
 
 .banner__right .owner {
 	align-items: center;
-	-webkit-animation: animate-3 5s linear 0s infinite;
-	animation: animate-3 5s linear 0s infinite;
+	-webkit-animation: top-to-bottom 10s ease-in-out infinite;
+	animation: top-to-bottom 10s ease-in-out infinite;
 	background: #fff;
 	border-radius: 30px;
-	bottom: 206px;
 	display: flex;
-	left: 4px;
+	left: 10%;
+	bottom: 10%;
+	transform: translateX(-50%);
 	padding: 20px;
 	position: absolute;
 	z-index: 3;
@@ -127,21 +129,21 @@
 	line-height: 1.4;
 }
 
-@keyframes owner {
-	from {
-		bottom: 50px;
+@keyframes right-to-left {
+	0% {
+		transform: translateX(0%) translateY(-50%);
 	}
-	to {
-		bottom: 60px;
+	50% {
+		transform: translateX(10%) translateY(-50%);
 	}
 }
 
-@keyframes animate-1 {
-	from {
-		right: 0px;
+@keyframes top-to-bottom {
+	0% {
+		transform: translateX(-50%) translateY(0%);
 	}
-	to {
-		right: 10px;
+	50% {
+		transform: translateX(-50%) translateY(-10%);
 	}
 }
 
