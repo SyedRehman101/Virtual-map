@@ -3,7 +3,7 @@ import React from 'react';
 
 const PortfolioBox = ({ step, icon, title, summary }) => {
   return (
-    <div class="portfolio-box">
+    <div class="portfolio-box ease-in-out duration-300">
       <div class="step">Step {step}</div>
       <div class="icon mr-8">
         <img src={icon} alt="Cyfonii" />

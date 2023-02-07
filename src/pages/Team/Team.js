@@ -1,7 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
-import "swiper/css/pagination";
 import member1 from '../../assets/Images/member1.png';
 import member2 from '../../assets/Images/member2.png';
 import member3 from '../../assets/Images/member3.png';
@@ -11,6 +10,7 @@ import './team.css';
 import TeamBox from './TeamBox';
 import Brand from '../Brand/Brand';
 import { Fade } from 'react-reveal';
+import { Autoplay } from 'swiper';
 
 const Team = () => {
   return (
@@ -26,7 +26,12 @@ const Team = () => {
           <Swiper
             slidesPerView={4}
             spaceBetween={30}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
             className="teamSlider"
+            modules={[Autoplay]}
             breakpoints={{
               1100: {
                 slidesPerView: 4

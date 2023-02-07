@@ -9,15 +9,14 @@ const Counter = () => {
   return (
     <section className="counter">
       <div className="lg:max-w-screen-xl w-full mx-auto p-4">
-        <div className="couter__main">
+        <div className="couter__main grid lg:grid-cols-2 grid-cols-1 items-center">
           <div className="couter-list flex">
             <CounterBox icon={<FaUsers />} text="Residential" number="100" />
             <CounterBox icon={<FaImages />} text="Commercial" number="100" />
             <CounterBox icon={<AiFillPieChart />} text="Industrial" number="100" />
-            <div className="image">
-              <img src={counterBg} alt="" />
-            </div>
+
           </div>
+          <img className='w-1/3 lg:block hidden' src={counterBg} alt="" />
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { data } from './data';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper';
+import { Pagination, Autoplay } from 'swiper';
 import "swiper/css/pagination";
 import 'swiper/css';
 import './projects.css'
@@ -23,11 +23,14 @@ const Projects = () => {
           <Swiper
             slidesPerView={4}
             spaceBetween={30}
-            isNext={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
             pagination={{
               clickable: true,
             }}
-            modules={[Pagination]}
+            modules={[Pagination, Autoplay]}
             className="projectSlider"
             breakpoints={{
               1100: {

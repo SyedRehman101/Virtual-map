@@ -23,7 +23,6 @@ const Faq = () => {
         <div className='faq__main mt-8'>
           <ul>
             <li><NavLink to='/Crypto'>Cryptocurrency</NavLink></li>
-            <li><NavLink to='/Crypto'>Cryptocurrency</NavLink></li>
             <li><NavLink to='/NftToken'>NFT Token</NavLink></li>
             <li><NavLink to='/Collection'>Collection</NavLink></li>
             <li><NavLink to='/CryptoTrade'>Crypto Trading</NavLink></li>

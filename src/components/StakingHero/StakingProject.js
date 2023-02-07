@@ -5,6 +5,7 @@ import 'swiper/css';
 import igos_projects from '../../pages/Staking/data/igos';
 import { FaFacebookF, FaTelegramPlane, FaTwitter, FaArrowRight } from 'react-icons/fa';
 import lineBg from '../../assets/Images/roadmapbg.png';
+import { Autoplay } from 'swiper';
 
 const StakingProject = () => {
   const [numOfElement, setNumOfElement] = useState(3);
@@ -33,7 +34,12 @@ const StakingProject = () => {
           <Swiper
             slidesPerView={3}
             spaceBetween={20}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
             isNext={true}
+            modules={[Autoplay]}
             className="projectSlider"
             breakpoints={{
               1100: {
@@ -114,7 +120,7 @@ const StakingProject = () => {
 
           {
             data.map(item => (
-              <div className="igs-project-box p-6 rounded-3xl bg-primaryDark my-8 shadow-lg">
+              <div className="igs-project-box p-6 rounded-3xl bg-primaryDark my-8 shadow-lg relative z-50 ease-in-out duration-200">
                 <div className="card_top flex justify-between items-center">
                   <div className='flex items-center'>
                     <img className='w-20 h-full rounded-lg' src={item.thumbnail} alt={item.title} />

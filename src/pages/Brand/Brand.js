@@ -8,6 +8,7 @@ import partner3 from '../../assets/Images/partner3.png';
 import partner4 from '../../assets/Images/partner4.png';
 import partner5 from '../../assets/Images/parner-5.png';
 import partner6 from '../../assets/Images/partner6.png';
+import { Autoplay } from 'swiper';
 
 const Brand = () => {
   return (
@@ -17,6 +18,11 @@ const Brand = () => {
         <Swiper
           slidesPerView={5}
           spaceBetween={20}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
           className="brandSlider"
           breakpoints={{
             1100: {

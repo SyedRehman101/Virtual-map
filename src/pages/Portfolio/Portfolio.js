@@ -62,9 +62,7 @@ const Portfolio = () => {
 
           <div className="portfolio__right">
             <div className="image">
-              <Fade duration="3000">
-                <img src={protfolio} alt="Portfolio Banner" />
-              </Fade>
+              <img src={protfolio} className="port_img" alt="Portfolio Banner" />
             </div>
           </div>
         </div>

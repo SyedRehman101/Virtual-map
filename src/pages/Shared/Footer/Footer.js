@@ -42,9 +42,9 @@ const Footer = () => {
         </div>
 
         <ul className='col-span-1 flex gap-4 items-center list-social'>
-          <li><a href="/"><FaFacebookF className='text-base-100' /></a></li>
-          <li><a href="/"><FaTwitter className='text-base-100' /></a></li>
-          <li><a href="/"><FaTelegramPlane className='text-base-100' /></a></li>
+          <li><a href="/"><FaFacebookF className='text-base-100 hover:text-primaryG ease-in-out duration-200 text-lg' /></a></li>
+          <li><a href="/"><FaTwitter className='text-base-100 hover:text-primaryG ease-in-out duration-200 text-lg' /></a></li>
+          <li><a href="/"><FaTelegramPlane className='text-base-100 hover:text-primaryG ease-in-out duration-200 text-lg' /></a></li>
         </ul>
       </div>
     </footer>

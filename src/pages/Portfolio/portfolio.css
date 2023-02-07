@@ -1,6 +1,7 @@
 .portfolio {
 	position: relative;
 }
+
 .portfolio-box {
 	background: linear-gradient(
 		180deg,
@@ -32,16 +33,8 @@
 }
 
 .portfolio-box .step {
-	-webkit-text-fill-color: transparent;
-	background: linear-gradient(
-		89.96deg,
-		hsla(0, 0%, 100%, 0.05) 0.03%,
-		hsla(0, 0%, 100%, 0.008) 49.67%,
-		hsla(0, 0%, 100%, 0.05) 99.96%
-	);
-	background: linear-gradient(264.28deg, #dec7ff -38.2%, #5c27fe 103.12%), #fff;
-	-webkit-background-clip: text;
-	border: 1px solid hsla(0, 0%, 100%, 0.1);
+	color: var(--primaryG);
+	border: 1px solid var(--primaryG);
 	border-radius: 100px;
 	font-family: Conthrax;
 	font-size: 12px;
@@ -60,4 +53,30 @@
 .portfolio .portfolio__right .image {
 	-webkit-animation: animate-1 15s linear 0s infinite;
 	animation: animate-1 15s linear 0s infinite;
+}
+
+.portfolio-box:hover {
+	box-shadow: 3px 3px 2px 2px var(--primary);
+}
+
+.image {
+	position: relative;
+	top: 50%;
+}
+
+.port_img {
+	animation: right-to-left-port 10s ease-in-out infinite;
+	position: absolute;
+	left: 0;
+	transform: translateY(-50%);
+	z-index: 3;
+}
+
+@keyframes right-to-left-port {
+	0% {
+		transform: translateX(0%) translateY(-50%);
+	}
+	50% {
+		transform: translateX(5%) translateY(-50%);
+	}
 }

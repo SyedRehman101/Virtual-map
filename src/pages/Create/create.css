@@ -11,9 +11,19 @@
 }
 
 .create__main img {
-	-webkit-animation: animate-1 15s linear 0s infinite;
-	animation: animate-1 15s linear 0s infinite;
+	-webkit-animation: right-to-left-c 15s ease-in-out infinite;
+	animation: right-to-left-c 15s ease-in-out infinite;
 	position: absolute;
-	right: 17px;
-	top: -112px;
+	transform: translateY(-50%);
+	right: 120px;
+	top: 80px;
+}
+
+@keyframes right-to-left-c {
+	0% {
+		transform: translateX(0%) translateY(-50%);
+	}
+	50% {
+		transform: translateX(10%) translateY(-50%);
+	}
 }

@@ -6,3 +6,13 @@
 		rgba(98, 19, 125, 1) 86%
 	);
 }
+
+.header-bg:hover {
+	background: rgb(175, 68, 212);
+	background: linear-gradient(
+		260deg,
+		rgba(175, 68, 212, 1) 20%,
+		rgba(98, 19, 125, 1) 86%
+	);
+	cursor: pointer;
+}
