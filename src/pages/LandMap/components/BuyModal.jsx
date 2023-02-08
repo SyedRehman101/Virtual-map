@@ -4,18 +4,24 @@ const BuyModal = (props) => {
 
     const SubmitHandler = (e) => {
         e.preventDefault();
-       
+        CloseModal();
 
     }
 
+    const CloseModal = () => {
+        const div = document.getElementById("buy-modal");
+        div.classList.add('scale-0')
+
+        const modalDiv = document.getElementById("modal");
+        modalDiv.classList.add("translate-x-96")
+    }
 
     return (
 
-        <div id='buy-modal' className='absolute scale-0 p-8 w-1/3 border-0 border-gray-100 top-28 rounded-lg bg-black z-30 h-auto left-1/3 transition-all duration-500'>
+        <div id='buy-modal' className='absolute scale-0 p-8 w-1/3 border-0 border-gray-100 top-44 rounded-lg bg-black z-30 h-auto left-1/3 transition-all duration-500'>
             <div className='flex justify-end transition-all'>
                 <button onClick={() => {
-                    const div = document.getElementById("buy-modal");
-                    div.classList.add('scale-0')
+                    CloseModal()
                 }}>
                     <AiOutlineClose className='text-gray-400 text-lg hover:animate-spin hover:text-purple-400' />
                 </button>

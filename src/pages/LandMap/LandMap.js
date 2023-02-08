@@ -50,7 +50,7 @@ const LandMap = () => {
 
         const modal = document.getElementById("modal");
 
-        modal.classList.remove('invisible');
+        modal.classList.remove('translate-x-96');
 
 
         // img.style.right = `${-e.pageX - 14.45}`
