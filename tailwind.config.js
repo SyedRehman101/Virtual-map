@@ -16,9 +16,20 @@ module.exports = {
         "light": "var(--light)",
         "dark": "var(--dark)",
         "darkLight": "var(--darkLight)",
-        "yellow": "var(--yellow)"
+        // "yellow": "var(--yellow)"
       }
     },
   },
   plugins: [require("daisyui")],
 }
+
+// const withMT = require("@material-tailwind/react/utils/withMT");
+
+
+// module.exports = withMT({
+//   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+//   theme: {
+//     extend: {},
+//   },
+//   plugins: [],
+// });
