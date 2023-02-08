@@ -32,28 +32,31 @@ const Modal = (props) => {
       </div>
 
       <br />
-      <br />
 
 
       <div className=' flex'>
         <FaMapMarkerAlt className=' text-cyan-400 my-auto ml-2 mr-1' /> <p className='text-white text-sm font-bold my-auto'>17, -35</p>
       </div>
 
-      <br />
+      <p className='text-gray-300 text-sm my-2'>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, soluta.
+      </p>
 
+      <small className='text-gray-400 font-semibold'>WHAT CAN I DO WITH LAND?</small>
 
-      <div className='flex gap-7 justify-center mt-4 transition-all'>
-        <a href='#' className='bg-white transition-all duration-500 hover:bg-blue-600 hover:animate-bounce hover:text-white flex justify-center items-center  rounded-full w-10 border-none h-10 uppercase  text-xs font-bold'>
-          <FaFacebookF className='text-xl' />
-        </a>
-        <a href='#' className='bg-white transition-all duration-500 hover:animate-bounce hover:bg-orange-500 hover:text-white flex justify-center items-center  rounded-full w-10 border-none h-10 uppercase  text-xs font-bold'>
-          <FaRedditAlien className='text-2xl' />
-        </a>
-        <a href='#' className='bg-white transition-all duration-500 hover:animate-bounce hover:bg-blue-400 hover:text-white flex justify-center items-center   rounded-full w-10 border-none h-10 uppercase  text-xs font-bold'>
-          <FaTwitter className='text-2xl' />
-        </a>
-      </div>
-      <br />
+      <ul className=' text-cyan-400 list-disc px-4'>
+
+        <li>
+          <small className='text-gray-400 font-semibold'>Start building!</small>
+        </li>
+        <li>
+          <small className='text-gray-400 font-semibold'>Earn special rewards</small>
+        </li>
+        <li>
+          <small className='text-gray-400 font-semibold'>Exclusive LAND Owner staking</small>
+        </li>
+
+      </ul>
     </div>
   )
 }

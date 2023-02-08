@@ -3,6 +3,7 @@ import Modal from './components/Modal';
 import Draggable from 'react-draggable';
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import BuyModal from './components/BuyModal';
+import BookedNftInfo from './components/BookedNFTInfo';
 const LandMap = () => {
   const gridNumber = 20161;
 
@@ -51,9 +52,16 @@ const LandMap = () => {
         // img.classList.remove('hidden')
         setSelectedBoxId(elem.id.split('-')[1])
 
-        const modal = document.getElementById("modal");
+        if (elem.id === "box-7274") {
+          const modal = document.getElementById("booked-nft-modal");
 
-        modal.classList.remove('translate-x-96');
+          modal.classList.remove('translate-x-96');
+        }
+        else {
+          const modal = document.getElementById("modal");
+
+          modal.classList.remove('translate-x-96');
+        }
 
 
         // img.style.right = `${-e.pageX - 14.45}`
@@ -109,6 +117,7 @@ const LandMap = () => {
         </div>
       </div>
       <Modal selectedBoxId={selectedBoxId} />
+      <BookedNftInfo />
       <BuyModal nftInfo={nftInfo} />
     </>
   )
