@@ -23,7 +23,7 @@ const BuyModal = (props) => {
                 <button onClick={() => {
                     CloseModal()
                 }}>
-                    <AiOutlineClose className='text-gray-400 text-lg hover:animate-spin hover:text-purple-400' />
+                    <AiOutlineClose className='text-white text-lg hover:animate-spin' />
                 </button>
             </div>
 
@@ -50,7 +50,7 @@ const BuyModal = (props) => {
                     <label for="Reddit link" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Reddit link</label>
                 </div>
                 <br />
-                <button type='submit' className='w-full h-auto bg-black text-sm  text-white p-2 uppercase transition-all hover:bg-purple-700 hover:text-white'>
+                <button type='submit' className='w-full h-auto bg-purple-900 text-sm  text-white p-2 uppercase transition-all hover:bg-purple-700 hover:text-white'>
                     Submit
                 </button>
             </form>
