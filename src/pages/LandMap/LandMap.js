@@ -52,15 +52,18 @@ const LandMap = () => {
         // img.classList.remove('hidden')
         setSelectedBoxId(elem.id.split('-')[1])
 
+        const modal = document.getElementById("modal");
+        const bookedmodal = document.getElementById("booked-nft-modal");
         if (elem.id === "box-7274") {
-          const modal = document.getElementById("booked-nft-modal");
 
-          modal.classList.remove('translate-x-96');
+          bookedmodal.classList.remove('translate-x-96');
+          modal.classList.add('translate-x-96');
         }
         else {
           const modal = document.getElementById("modal");
 
           modal.classList.remove('translate-x-96');
+          bookedmodal.classList.add('translate-x-96');
         }
 
 
