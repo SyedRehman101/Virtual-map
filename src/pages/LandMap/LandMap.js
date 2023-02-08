@@ -3,7 +3,6 @@ import Modal from './components/Modal';
 import Draggable from 'react-draggable';
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import BuyModal from './components/BuyModal';
-
 const LandMap = () => {
   const gridNumber = 20161;
 

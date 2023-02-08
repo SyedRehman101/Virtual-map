@@ -10,7 +10,7 @@ const Modal = (props) => {
           const div = document.getElementById("modal");
           div.classList.add("invisible")
         }}>
-          <AiOutlineClose className='text-gray-400 hover:animate-spin hover:text-purple-500' />
+          <AiOutlineClose className='text-gray-400 text-lg hover:animate-spin hover:text-purple-400 ' />
         </button>
       </div>
       <img className='mx-auto' width={"80%"} src={LandPreview} />
@@ -24,7 +24,10 @@ const Modal = (props) => {
 
       <br />
       <div className=' w-full flex gap-3'>
-        <button className='bg-purple-400 transition-all hover:bg-purple-600 hover:text-white rounded-sm w-20 p-1 uppercase text-center text-xs text-white font-bold' onClick={() => { document.getElementById("buy-modal").classList.remove("scale-0") }}>Buy</button>
+        <button className='bg-purple-400 transition-all hover:bg-purple-600 hover:text-white rounded-sm w-20 p-1 uppercase text-center text-xs text-white font-bold' onPointerDown={(e) => { 
+          e.preventDefault();
+          document.getElementById("buy-modal").classList.remove("scale-0") 
+          }}>Buy</button>
         <button className='bg-yellow-300 transition-all hover:bg-yellow-400 hover:text-white rounded-sm w-20 p-1 uppercase text-center text-xs text-white font-bold'>Claim</button>
       </div>
 

@@ -27,7 +27,7 @@ module.exports = {
 
 
 // module.exports = withMT({
-//   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+//   content: ["./src/**/*.{js}"],
 //   theme: {
 //     extend: {},
 //   },
