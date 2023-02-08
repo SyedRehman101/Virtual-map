@@ -8,6 +8,7 @@ import CryptoTrade from "../pages/Faq/CryptoTrade";
 import FaqsPage from "../pages/Faq/FaqsPage";
 import NftToken from "../pages/Faq/NftToken";
 import Home from "../pages/Home/Home";
+import LandMap from "../pages/LandMap/LandMap";
 import NftMarketPage from "../pages/NftMarket/NftMarketPage";
 import RoadMap from "../pages/RoadMap/RoadMap";
 import Staking from "../pages/Staking/Staking";
@@ -53,7 +54,7 @@ const Router = createBrowserRouter([
       },
       {
         path: '/landmap',
-        element: <RoadMap></RoadMap>
+        element: <LandMap></LandMap>
       },
       {
         path: '/staking',

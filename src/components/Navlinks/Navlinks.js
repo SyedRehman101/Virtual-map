@@ -14,7 +14,7 @@ const Navlinks = () => {
       </li>
       <li><NavLink to="/nftmarket" className="uppercase">NFT Market</NavLink></li>
       <li>
-        <NavLink to="/Portfolio" className="uppercase">Land Map</NavLink>
+        <NavLink to="/landmap" className="uppercase">Land Map</NavLink>
       </li>
       <li>
         <NavLink to="/staking" className="uppercase">Staking</NavLink>
