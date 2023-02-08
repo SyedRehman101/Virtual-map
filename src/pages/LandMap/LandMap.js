@@ -41,6 +41,9 @@ const LandMap = () => {
 
 
     btns.forEach((elem, index) => {
+      if (elem.id === "box-7274") {
+        elem.style.backgroundColor = "plum"
+      }
       elem.addEventListener('click', (e) => {
         // const index = elem.id.split('-');
         // const img = document.getElementById('img-' + index);
@@ -70,7 +73,7 @@ const LandMap = () => {
             {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
               <>
                 <TransformComponent>
-                  <div id="grid-container" className=" w-full h-full  relative transition-all duration-300 flex" >
+                  <div id="grid-container" className=" w-full h-[48rem]  relative transition-all duration-300 flex overflow-hidden" >
                     <Draggable onMouseDown={(e) => {
 
                       e.stopPropagation()
@@ -84,20 +87,20 @@ const LandMap = () => {
                   </div>
 
                 </TransformComponent>
-                <div className='fixed bottom-5 left-10 z-20'>
+                <div className='flex flex-col fixed bottom-5 left-10 z-20'>
 
-                  <button onPointerDown={(e) => {
-                    e.preventDefault()
-                    zoomOut();
-                  }} className=' bg-white w-10 p-1'>
-                    -
-                  </button>
                   <button onPointerDown={(e) => {
                     e.preventDefault()
                     zoomIn()
 
-                  }} className='  bg-white w-10 p-1'>
+                  }} className='  w-6 bg-black border rounded-t  border-gray-500 text-white p-1 hover:text-white'>
                     +
+                  </button>
+                  <button onPointerDown={(e) => {
+                    e.preventDefault()
+                    zoomOut();
+                  }} className=' w-6 bg-black border rounded-b  border-gray-500 text-white p-1 hover:text-white'>
+                    -
                   </button>
                 </div>
               </>

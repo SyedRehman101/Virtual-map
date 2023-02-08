@@ -4,7 +4,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { FaFacebookF, FaMapMarkerAlt, FaRedditAlien, FaTwitter } from 'react-icons/fa';
 const Modal = (props) => {
   return (
-    <div id='modal' className=' absolute p-8 w-1/5 border-0 border-gray-100 top-40 rounded-lg right-0 translate-x-96  bg-black z-30 h-auto transition-all duration-500'>
+    <div id='modal' className=' absolute p-8 w-1/5 modal-bg border-0 border-gray-100 top-40 rounded-lg right-0 translate-x-96   z-30 h-auto transition-all duration-500'>
       <div className='flex justify-end'>
         <button onClick={() => {
           const div = document.getElementById("modal");
@@ -46,7 +46,7 @@ const Modal = (props) => {
         <a href='#' className='bg-white transition-all duration-500 hover:bg-blue-600 hover:animate-bounce hover:text-white flex justify-center items-center  rounded-full w-10 border-none h-10 uppercase  text-xs font-bold'>
           <FaFacebookF className='text-xl' />
         </a>
-        <a href='#' className='bg-white transition-all duration-500 hover:animate-bounce hover:bg-orange-700 hover:text-white flex justify-center items-center  rounded-full w-10 border-none h-10 uppercase  text-xs font-bold'>
+        <a href='#' className='bg-white transition-all duration-500 hover:animate-bounce hover:bg-orange-500 hover:text-white flex justify-center items-center  rounded-full w-10 border-none h-10 uppercase  text-xs font-bold'>
           <FaRedditAlien className='text-2xl' />
         </a>
         <a href='#' className='bg-white transition-all duration-500 hover:animate-bounce hover:bg-blue-400 hover:text-white flex justify-center items-center   rounded-full w-10 border-none h-10 uppercase  text-xs font-bold'>

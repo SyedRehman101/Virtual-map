@@ -7,15 +7,23 @@ import { Outlet } from 'react-router';
 import Footer from '../pages/Shared/Footer/Footer';
 import ScrollToTop from 'react-scroll-to-top';
 import Drawer from '../components/Drawer/Drawer';
-
+import { useLocation } from 'react-router';
 const Main = () => {
   AOS.init();
+
+  const location = useLocation();
   return (
     <>
       <Header></Header>
       <Navbar></Navbar>
       <Outlet></Outlet>
-      <Footer></Footer>
+      {
+        location.pathname !== '/landmap' ? (
+          <Footer></Footer>
+        ) : (
+          <></>
+        )
+      }
       <ScrollToTop smooth color='#fff' width="30" height='18' className='scrolTop' />
       <Drawer></Drawer>
     </>
