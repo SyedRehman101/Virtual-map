@@ -26,7 +26,7 @@ const Modal = (props) => {
           e.preventDefault();
           document.getElementById("buy-modal").classList.remove("scale-0")
         }}>Buy</button>
-        <button className='bg-yellow-300 transition-all hover:bg-yellow-400 hover:text-white rounded-sm w-20 p-1 uppercase text-center text-xs text-white font-bold'>Claim</button>
+        <button className=' hover:text-white rounded-sm w-20 p-1 uppercase text-center text-xs text-white font-bold'>Claim</button>
       </div>
 
       <br />
