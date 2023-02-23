@@ -25,7 +25,7 @@ const LandMap = () => {
   const ZoomIn = () => {
     const square = document.getElementById('grid-container');
     if (counter < 5) {
-        counter += 0.5;
+        counter += 1.5;
         square.style.transform = `scale(${counter})`;
 
         square.classList.add("opacity-0");
@@ -39,7 +39,7 @@ const LandMap = () => {
 const ZoomOut = () => {
     const square = document.getElementById('grid-container');
     if (counter > 1) {
-        counter -= 0.5;
+        counter -= 1.5;
         square.style.transform = `scale(${counter})`;
         square.classList.add("opacity-0");
 
@@ -181,7 +181,7 @@ useEffect(()=>{
                     }}>
           </Draggable> */}
 
-          <div id="grid-container" className=" w-full h-[48rem]  relative transition-all duration-300 flex overflow-hidden" >
+          <div id="grid-container" className=" w-full h-[48rem] bg-[#250328] relative transition-all duration-300 flex overflow-hidden p-20" >
 
             {/*Border-360 */}
             {/* <div className="w-full  border-1 border-gray-900 transition-all relative  duration-300 h-5/4 flex flex-row flex-wrap bg-gray-900 cursor-grab overflow-hidden" id="grid-box" >
