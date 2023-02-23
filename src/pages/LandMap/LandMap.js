@@ -18,7 +18,7 @@ const LandMap = () => {
     redditLink: ""
   })
   const BOX_SIZE = 50; // Set the size of the boxes in the grid
-  const NUM_ROWS = 250;
+  const NUM_ROWS = 120;
   const NUM_COLS = 153;
   var counter = 1;
 
