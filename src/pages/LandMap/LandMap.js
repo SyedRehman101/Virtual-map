@@ -24,8 +24,8 @@ const LandMap = () => {
 
   const ZoomIn = () => {
     const square = document.getElementById('grid-container');
-    if (counter < 2) {
-        counter += 1;
+    if (counter < 5) {
+        counter += 0.5;
         square.style.transform = `scale(${counter})`;
 
         square.classList.add("opacity-0");
@@ -39,7 +39,7 @@ const LandMap = () => {
 const ZoomOut = () => {
     const square = document.getElementById('grid-container');
     if (counter > 1) {
-        counter -= 1;
+        counter -= 0.5;
         square.style.transform = `scale(${counter})`;
         square.classList.add("opacity-0");
 
@@ -48,6 +48,19 @@ const ZoomOut = () => {
         }, 500)
     }
 }
+
+useEffect(()=>{
+// window.addEventListener("wheel", (e) => {
+//             if (e.deltaY > 0.2) {
+        
+//                 ZoomOut()
+//             }
+//             else if (e.deltaY < 2) {
+//                 ZoomIn()
+//             }
+//             else { }
+//         })
+},[])
 
   const cellRenderer = ({ rowIndex, columnIndex, key, style }) => (
 
@@ -163,13 +176,14 @@ const ZoomOut = () => {
           </TransformWrapper> */}
           {/* <TransformComponent>
                 </TransformComponent> */}
-          <div id="grid-container" className=" w-full h-[48rem]  relative transition-all duration-300 flex overflow-hidden" >
-
-            {/*Border-360 */}
             {/* <Draggable onMouseDown={(e) => {
                       e.stopPropagation()
                     }}>
-                       </Draggable> */}
+          </Draggable> */}
+
+          <div id="grid-container" className=" w-full h-[48rem]  relative transition-all duration-300 flex overflow-hidden" >
+
+            {/*Border-360 */}
             {/* <div className="w-full  border-1 border-gray-900 transition-all relative  duration-300 h-5/4 flex flex-row flex-wrap bg-gray-900 cursor-grab overflow-hidden" id="grid-box" >
             </div> */}
 
