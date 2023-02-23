@@ -4,7 +4,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { FaFacebookF, FaMapMarkerAlt, FaRedditAlien, FaTwitter } from 'react-icons/fa';
 const Modal = (props) => {
   return (
-    <div id='modal' className=' absolute p-8 w-1/5 modal-bg border-0 border-gray-100 top-40 rounded-lg right-2 translate-x-96   z-30 h-auto transition-all duration-500'>
+    <div ref={props.ref} id='modal' className=' absolute p-8 w-1/5 modal-bg border-0 border-gray-100 top-40 rounded-lg right-2 translate-x-96   z-30 h-auto transition-all duration-500'>
       <div className='flex justify-end'>
         <button onClick={() => {
           const div = document.getElementById("modal");

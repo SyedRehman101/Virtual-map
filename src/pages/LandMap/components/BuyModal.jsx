@@ -18,7 +18,7 @@ const BuyModal = (props) => {
 
     return (
 
-        <div id='buy-modal' className='absolute scale-0 p-8 w-1/3 border-0 border-gray-100 top-44 rounded-lg modal-bg z-30 h-auto left-1/3 transition-all duration-500'>
+        <div ref={props.ref} id='buy-modal' className='absolute scale-0 p-8 w-1/3 border-0 border-gray-100 top-44 rounded-lg modal-bg z-30 h-auto left-1/3 transition-all duration-500'>
             <div className='flex justify-end transition-all'>
                 <button onClick={() => {
                     CloseModal()
