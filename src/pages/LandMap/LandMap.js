@@ -181,7 +181,7 @@ useEffect(()=>{
                     }}>
           </Draggable> */}
 
-          <div id="grid-container" className=" w-full h-[48rem] bg-[#250328] relative transition-all duration-300 flex overflow-hidden p-20" >
+          <div id="grid-container" className=" w-full h-[48rem] bg-gray-900 relative transition-all duration-300 flex overflow-hidden" >
 
             {/*Border-360 */}
             {/* <div className="w-full  border-1 border-gray-900 transition-all relative  duration-300 h-5/4 flex flex-row flex-wrap bg-gray-900 cursor-grab overflow-hidden" id="grid-box" >
