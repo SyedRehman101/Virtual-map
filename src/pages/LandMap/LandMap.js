@@ -18,8 +18,8 @@ const LandMap = () => {
     redditLink: ""
   })
   const BOX_SIZE = 50; // Set the size of the boxes in the grid
-  const NUM_ROWS = 200;
-  const NUM_COLS = 200;
+  const NUM_ROWS = 250;
+  const NUM_COLS = 153;
   var counter = 1;
 
   const ZoomIn = () => {
@@ -73,14 +73,15 @@ useEffect(()=>{
       const bookedmodal = document.getElementById("booked-nft-modal");
       const attributes = e.target.id.split("-")
       setSelectedBoxId(attributes[1] + "" + attributes[2])
+      const bookedPlots = ["btn-26-43","btn-25-73","btn-24-91","btn-17-89","50-57"]
 
-
-      if (e.target.id === "btn-26-43") {
+      if (bookedPlots.includes(e.target.id)) {
 
         bookedmodal.classList.remove('translate-x-96');
         modal.classList.add('translate-x-96');
       }
-      else {
+
+      else{
 
 
         modal.classList.remove('translate-x-96');
@@ -88,7 +89,7 @@ useEffect(()=>{
       }
 
 
-    }} key={key} style={style} class={`cursor-grab border-[#4a0c5f] ${key === "26-43" ? "bg-purple-200" : ""}  ${key === "26-43" ? "focus:bg-purple-300" : "focus:bg-red-600"} w-2 h-2 border-t-[0.5px] border-l-[0.5px] border-b-[0.5px] border-r-[0.5px]  flex-none`}></button>
+    }} key={key} style={style} class={`cursor-grab border-[#4a0c5f] ${key === "26-43" || key === "25-73" || key === "24-91" || key === "17-89" || key === "50-57" ? "bg-purple-200" : ""}  ${key === "26-43" || key === "25-73" || key === "24-91" || key === "17-89" || key === "50-57" ? "focus:bg-purple-300" : "focus:bg-red-600"} w-2 h-2 border-t-[0.5px] border-l-[0.5px] border-b-[0.5px] border-r-[0.5px]  flex-none`}></button>
   );
 
   // useEffect(() => {
